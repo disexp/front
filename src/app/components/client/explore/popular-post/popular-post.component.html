@@ -1,0 +1,18 @@
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="10px grid">
+    <div fxFlex="33.3%" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let post of posts">
+      <mat-card  class="post-card"  >
+        <mat-card-subtitle> {{post.theme}} </mat-card-subtitle> 
+        <mat-card-header>           
+          <div mat-card-avatar class="avatar-header-image"></div>
+          <mat-card-title>&{{post.group}} </mat-card-title>            
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+
+
+
+

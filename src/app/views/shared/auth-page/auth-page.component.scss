@@ -1,0 +1,48 @@
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.postimg.cc/Y9CgJt3L/background-login.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .auth-form {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .form {
+    background-color: white;
+    position: relative;
+  }
+  
+  .back-button {
+    position: absolute;
+    color: white;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .option-button {
+    margin-right: 10px;
+  }
+
+  .account-type {
+    margin-top: 2rem;
+  }
+  
+  .option-button.selected {
+    background-color: #ffae00;
+  }

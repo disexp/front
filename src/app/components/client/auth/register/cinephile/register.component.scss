@@ -1,0 +1,41 @@
+.form{
+    .row {
+        display: flex;
+        gap: 10px;
+    
+        mat-form-field {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            &.mat-form-field-appearance-outline {
+                .mat-form-field-wrapper {
+                  padding: 0;
+                }
+              }
+            .mat-mdc-tab-body-content{
+                
+                overflow: hidden;
+            }
+            
+        }
+
+    }
+
+    .mat-mdc-raised-button.mat-unthemed {
+        --mdc-protected-button-container-color: #FFAD00;
+        --mdc-protected-button-label-text-color: #FFFF;
+    }
+
+    @media (max-width: 600px) {
+        .row {
+          flex-direction: column;
+    
+          mat-form-field {
+            flex-basis: 100%;
+          }
+        }
+    }
+
+
+}
+

@@ -1,0 +1,42 @@
+<div class="flex auth-form justify-content-center p-5">
+  <div class="background-image"></div>
+  <button mat-icon-button class="back-button" (click)="redirectToUserElection()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <div class="form border-round-3xl">
+    <div class="flex flex-column p-5">
+      <div class="title">
+        <h1>¡Bienvenido a TuCine!</h1>
+        <p>Ingresa tu cuenta y disfruta de los beneficios y mejores promociones que tenemos para ti.</p>
+      </div>
+      <div class="auth-nav">
+        <mat-tab-group animationDuration="0ms" [selectedIndex]="selectedTabIndex">
+          <mat-tab label="Iniciar sesión">
+            <client-auth-login></client-auth-login>
+          </mat-tab>
+          <mat-tab label="Crear cuenta">
+            <ng-container *ngIf="showUserElection">
+              <div class="account-type">
+                <p>Quieres registrarte como: </p>
+              </div>
+              <div class="button-container">
+                <button mat-raised-button class="option-button" [class.selected]="cinephileButtonSelected" (click)="selectCinephile()">
+                  Cinéfilo
+                </button>
+                <button mat-raised-button class="option-button" [class.selected]="ownerButtonSelected" (click)="selectOwner()">
+                  Propietario
+                </button>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="showCinephileRegister">
+              <auth-register-cinephile></auth-register-cinephile>
+            </ng-container>
+            <ng-container *ngIf="showOwnerRegister">
+              <auth-register-owner></auth-register-owner>
+            </ng-container>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>

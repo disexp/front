@@ -1,0 +1,30 @@
+.form{
+
+    padding-top: 5px;
+    .row {
+        display: flex;
+        gap: 10px;
+    
+        mat-form-field {
+            width: 100%;
+
+        }
+    }
+
+
+
+    @media (max-width: 800px) {
+        .row {
+          flex-direction: column;
+    
+          mat-form-field {
+            flex-basis: 100%;
+          }
+        }
+    }
+}
+
+.mat-mdc-raised-button{
+    --mdc-protected-button-container-color: #FFAD00;
+    --mdc-protected-button-label-text-color: #FFFF;
+}

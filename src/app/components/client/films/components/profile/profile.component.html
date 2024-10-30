@@ -1,0 +1,123 @@
+<div>
+  <div class="flex flex-column  xl:mx-8 lg:mx-8 md:mx-0 sm:mx-0" style="background-color: white; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
+    <div class="flex video-header justify-content-center"> 
+      <iframe [src]="getSafeTrailerUrl()" width="560" height="315" frameborder="0" allowfullscreen></iframe>    
+    </div>
+    <div class="card" style="margin-right: 2rem ; margin-left: 2rem;">
+      <div class="flex flex-column justify-content-center my-4">
+        <div class="title">
+          <h1 class="font-bold">{{FilmProfile.title | uppercase }}</h1>
+        </div>
+
+        <div class=" flex flex-row main">
+
+          <div class="flex flex-row">
+            <img class="img-poster" src={{FilmProfile.poster}} alt="Imagen referencial" style="height: 378px; width: 278px;">
+          </div>
+
+          <div class="w-full">
+            <div class="flex flex-column mx-4">
+
+              <div class="flex justify-content-end ">
+                <mat-form-field appearance="outline" class="bg-white">
+                  <mat-label>Buscar</mat-label>
+                  <input matInput (keyup)="applyFilter($event)" #input>
+                </mat-form-field>
+              </div>
+            
+            <div class=" flex mat-elevation-z8">
+              <table mat-table [dataSource]="dataSource" matSort>
+            
+                <ng-container matColumnDef="cineclub">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by cineclub"
+                  > Cineclub </th>
+                  <td mat-cell *matCellDef="let element"> {{element.cineclub}} </td>
+                </ng-container>
+            
+                <!-- Weight Column -->
+                <ng-container matColumnDef="category">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by category"
+                  > Categoria </th>
+                  <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+                </ng-container>
+            
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="date">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by date"
+                  > Horario </th>
+                  <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="time">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by time"
+                  > Horario </th>
+                  <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+                </ng-container>
+          
+                <ng-container matColumnDef="price">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by price"
+                  > Precio </th>
+                  <td mat-cell *matCellDef="let element"> S/. {{element.price}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="action">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Reservar
+                  </th>
+                  <td mat-cell *matCellDef="let element"> 
+                      <button mat-icon-button color="primary" (click)="openBuyTicket(element)">
+                          <mat-icon>book_online</mat-icon>
+                      </button>
+                  </td>
+                </ng-container>
+            
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
+
+            </div>
+            <div class="flex mat-elevation-z8 justify-content-end bg-white">
+              <mat-paginator [pageSizeOptions]="[5, 10, 15]"
+              showFirstLastButtons
+              aria-label="Select page of periodic elements">
+              </mat-paginator>
+            </div>
+          </div>    
+        </div>
+        <div class="flex flex-row">
+          <div class="w-15rem">
+            <mat-accordion>
+            <mat-expansion-panel >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  TÍTULO ORIGINAL
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p>{{FilmProfile.title}}</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  REPARTO
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ul class="no-bullets">
+                <li *ngFor="let actor of ActorList">{{ actor.Actor }}</li>
+              </ul>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  SINOPSIS
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p>{{FilmProfile.synopsis}}</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+          </div>
+          
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>

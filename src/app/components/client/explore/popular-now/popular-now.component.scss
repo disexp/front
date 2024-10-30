@@ -1,0 +1,39 @@
+.content > mat-card {
+    margin-bottom: 16px;
+}
+
+mat-card-title{
+    font-size: 14px;
+    font-weight: bold;
+    color: #E28300;
+}
+
+mat-card-subtitle{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    .mat-icon { font-size: 17px; }
+}
+
+mat-card-content{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    .mat-icon { 
+        margin-right: 0px;
+        margin-left: 0px;
+     }
+}
+
+.event-card {
+    max-width: 252px;
+    max-height: 330px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+  

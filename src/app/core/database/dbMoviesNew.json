@@ -1,0 +1,1251 @@
+{
+  "Gender": [
+    {
+      "id": 1,
+      "name": "Femenino"
+    },
+    {
+      "id": 2,
+      "name": "Masculino"
+    },
+    {
+      "id": 3,
+      "name": "Otros"
+    }
+  ],
+  "TypeUser": [
+    {
+      "id": 1,
+      "name": "Customer"
+    },
+    {
+      "id": 2,
+      "name": "Owner"
+    }
+  ],
+  "Group": [
+    {
+      "id": 1,
+      "Person_id": 1,
+      "ubication": "Lima El Agustino",
+      "name": "Grupo 1",
+      "description": "Este es el grupo 1",
+      "size": 10
+    },
+    {
+      "id": 2,
+      "ubication": "Lima",
+      "topics": [
+        "Action"
+      ],
+      "name": "Action Lovers",
+      "description": "Somos Amantes de la acción "
+    }
+  ],
+  "Topic": [
+    {
+      "id": 1,
+      "name": "Accion"
+    },
+    {
+      "id": 2,
+      "name": "Comedia"
+    },
+    {
+      "id": 3,
+      "name": "CineClubes"
+    },
+    {
+      "id": 4,
+      "name": "Discusiones"
+    },
+    {
+      "id": 5,
+      "name": "Talleres de Fotografía"
+    },
+    {
+      "id": 6,
+      "name": "Talleres de Pintura"
+    }
+  ],
+  "GroupTopics": [
+    {
+      "id": 1,
+      "Group_id": 1,
+      "Topic_id": 1
+    },
+    {
+      "id": 2,
+      "Group_id": 1,
+      "Topic_id": 2
+    },
+    {
+      "id": 3,
+      "Group_id": 1,
+      "Topic_id": 3
+    },
+    {
+      "id": 4,
+      "Group_id": 1,
+      "Topic_id": 4
+    },
+    {
+      "id": 5,
+      "Group_id": 1,
+      "Topic_id": 5
+    },
+    {
+      "id": 6,
+      "Group_id": 1,
+      "Topic_id": 6
+    }
+  ],
+  "Person": [
+    {
+      "id": 1,
+      "name": "Tania",
+      "lastName": "Vasquez",
+      "birthdate": "1990-01-01",
+      "phone": "12345678",
+      "password": "12345678",
+      "number_dni": "12345678",
+      "photo": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+      "email": "tania@gmail.com",
+      "Gender_id": 1,
+      "TypeUser_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Yosef",
+      "lastName": "Vasquez",
+      "birthdate": "2005-01-01",
+      "phone": "12345678",
+      "email": "yosef@gmail.com",
+      "password": "12345678",
+      "number_dni": "12345678",
+      "Gender_id": 2,
+      "TypeUser_id": 2
+    },
+    {
+      "first_name": "Sohee",
+      "last_name": "Carrión",
+      "Gender_id": 1,
+      "number_dni": "72920060",
+      "birthdate": "2006-02-26T05:00:00.000Z",
+      "phone": "964184051",
+      "email": "tania@gmail.com",
+      "password": "asd",
+      "TypeUser_id": 1,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "first_name": "Yasmin",
+      "last_name": "Vasquez",
+      "Gender_id": 1,
+      "number_dni": "72920054",
+      "birthdate": "2007-11-12T05:00:00.000Z",
+      "phone": "964184562",
+      "email": "cafe@gmail.com",
+      "password": "cafe1234",
+      "TypeUser_id": 2
+    },
+    {
+      "first_name": "Fanny",
+      "last_name": "Vasquez",
+      "Gender_id": 1,
+      "number_dni": "72920060",
+      "birthdate": "2023-06-07T05:00:00.000Z",
+      "phone": "964151020",
+      "email": "aadadaasd@gmail",
+      "password": "123",
+      "TypeUser_id": {
+        "id": 1
+      },
+      "id": 5
+    },
+    {
+      "Gender_id": {
+        "id": 2
+      },
+      "TypeUser_id": {
+        "id": 1
+      },
+      "first_name": "para",
+      "last_name": "asfasf",
+      "number_dni": "72950060",
+      "birthdate": "2023-06-06T05:00:00.000Z",
+      "phone": "945263057",
+      "email": "asas@gmail.com",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "first_name": "aas",
+      "last_name": "sfasf",
+      "Gender_id": 2,
+      "number_dni": "55188723",
+      "birthdate": "2023-06-08T05:00:00.000Z",
+      "phone": "954184050",
+      "email": "adsasd@gma",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "first_name": "Fran",
+      "last_name": "aasfasf",
+      "number_dni": "15126642",
+      "birthdate": "2023-06-07T05:00:00.000Z",
+      "photo": "",
+      "phone": "964184051",
+      "email": "assa@afsdf",
+      "password": "123",
+      "Gender_id": {},
+      "TypeUser_id": {
+        "id": 1
+      },
+      "id": 8
+    },
+    {
+      "first_name": "sffas",
+      "last_name": "aasfasf",
+      "number_dni": "72506006",
+      "birthdate": "2023-06-07T05:00:00.000Z",
+      "photo": "",
+      "phone": "964184051",
+      "email": "as@gmaia",
+      "password": "123",
+      "Gender_id": {
+        "id": 2
+      },
+      "TypeUser_id": {
+        "id": 1
+      },
+      "id": 9
+    }
+  ],
+  "Customer": [
+    {
+      "id": 1,
+      "Person_id": 1
+    },
+    {
+      "id": 2,
+      "Person_id": 3
+    }
+  ],
+  "Owner": [
+    {
+      "id": 1,
+      "Person_id": 2,
+      "bank_account": "123456789"
+    },
+    {
+      "id": 2,
+      "Person_id": 4,
+      "bank_account": "9644164756"
+    }
+  ],
+  "CustomerPayMethod": [
+    {
+      "id": 1,
+      "Customer_id": 1,
+      "PayMethod_id": 1
+    },
+    {
+      "id": 2,
+      "Customer_id": 1,
+      "PayMethod_id": 2
+    },
+    {
+      "id": 3,
+      "Customer_id": 1,
+      "PayMethod_id": 3
+    }
+  ],
+  "PayMethod": [
+    {
+      "id": 1,
+      "name": "VISA"
+    },
+    {
+      "id": 2,
+      "name": "MasterCard"
+    },
+    {
+      "id": 3,
+      "name": "Paypal"
+    }
+  ],
+  "Business": [
+    {
+      "id": 1,
+      "name": "LimaPark",
+      "socialReason": "LimaPark S.A.C",
+      "ruc": "12345678912",
+      "phone": "964184051",
+      "email": "LimaPark@gmail.com",
+      "imageLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5K22BOYeOiDTybrtlbI8CDnBEOa-jIWOWfOk8IT6detyvX9tqGjXJYdA6wHHT69BT3DI&usqp=CAU",
+      "imageBanner": "https://i.postimg.cc/25DXG8PC/cineclub-banner.png",
+      "description": "Somos una propuesta de entretenimiento donde vivirás el cine desde la comodidad y seguridad de tu auto. Podrás disfrutar de los últimos estrenos y también de nuestra confitería. ¡El lugar perfecto para salir de la rutina! Te esperamos.",
+      "dateAttention": "Lunes a Viernes: primera función del día Sábados, Domingo y festivos: primera función del día",
+      "address": "Calle Alfredo Mendiola 3698 Km 8.5 de la Av. Panamericana Norte Independencia",
+      "referenceAddress": "Cruce de la Av. Izaguirre y Av. Universitaria",
+      "businessType_id": {
+          "id": 1
+      }
+    },
+    {
+      "id": 2,
+      "name": "CafeAllDay",
+      "social_reason": "CafeAllDay SAC",
+      "RUC": "96418405112",
+      "phone": "964184051",
+      "email": "cafe@gmail.com",
+      "image_logo": "https://media-cdn.tripadvisor.com/media/photo-s/07/04/a3/7c/cine-cafe.jpg",
+      "image_banner": "https://media-cdn.tripadvisor.com/media/photo-s/07/04/a3/7c/cine-cafe.jpg",
+      "description": "Café, Comida rápida, una combinación perfecta para disfrutar de un buen momento con amigos y familiares. No te pierdas de nuestras promociones y descuentos. ¡Te esperamos!",
+      "date_attention": "Abierto ahora: 07:30 a. m. - 06:30 a. m.",
+      "address": "Rua Doutor Colares 293 Centro, Ponta Grossa",
+      "reference_address": "Estado de Paraná 84010-010 Brasil",
+      "Owner_id": 2,
+      "BusinessType_id": 3
+    },
+    {
+      "id": 3,
+      "name": "Cinema RestoBar",
+      "social_reason": "Cinema Restobar SAC",
+      "RUC": "20488596257",
+      "phone": "964185140",
+      "email": "cinema@gmail.com",
+      "image_logo": "https://graph.facebook.com/773459456025923/picture?type=large",
+      "image_banner": "https://graph.facebook.com/773459456025923/picture?type=largeg",
+      "description": "RESTAURANT, BAR, VIDEOPUB, KARAOKE ESPECIALIDAD EN CAJA CHINA, VEN Y DISFRUTA CON TU FAMILIA Y AMIGOS DE UNA NOCHE INOLVIDABLE.",
+      "date_attention": "Abierto ahora: 12:00 p. m. - 02:00 a. m.",
+      "address": "Bartolome Herrera 425 Lince, Lima, Peru",
+      "reference_address": "Estado de Paraná 84010-010 Brasil",
+      "Owner_id": 3,
+      "BusinessType_id": 2
+    },
+    {
+      "id": 4,
+      "name": "De Lima",
+      "social_reason": "Cafe de Lima SAC",
+      "RUC": "20488585477",
+      "phone": "963595140",
+      "email": "cafedelima@gmail.com",
+      "image_logo": "https://scontent.flim28-1.fna.fbcdn.net/v/t1.6435-9/29177254_1661549243924926_6177378537587081216_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=7j343Ag9wNMAX-nIx2s&_nc_ht=scontent.flim28-1.fna&oh=00_AfBegRTKpe3pbkN_0MuQDtxit2RqMHQlmRVuCWZH72FGMA&oe=64ACFC2E",
+      "image_banner": "https://scontent.flim28-1.fna.fbcdn.net/v/t1.6435-9/29177254_1661549243924926_6177378537587081216_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=7j343Ag9wNMAX-nIx2s&_nc_ht=scontent.flim28-1.fna&oh=00_AfBegRTKpe3pbkN_0MuQDtxit2RqMHQlmRVuCWZH72FGMA&oe=64ACFC2E",
+      "description": "Terminar una película y que una pizza te espere en CDL, es el mejor final para cualquier historia 🙂 ¿Qué película vas a ver hoy? ",
+      "date_attention": "Abierto ahora: 4:00 p. m. - 02:00 a. m.",
+      "address": "Bartolome Herrera 1050 Lince, Lima, Peru",
+      "reference_address": "",
+      "Owner_id": 4,
+      "BusinessType_id": 3
+    },
+    {
+      "id": 5,
+      "name": "CineClub",
+      "social_reason": "CineClub SAC",
+      "RUC": "20488585477",
+      "phone": "963595140",
+      "email": "",
+      "image_logo": "https://scontent.flim28-1.fna.fbcdn.net/v/t31.18172-8/17636920_1314866738600874_6139132272617177647_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=IVpx9umVmnAAX-eqHiv&_nc_ht=scontent.flim28-1.fna&oh=00_AfC2f8NFwIK7Jry12y5RlrkGrWzXTAzDvmVAPnYFM7F0ew&oe=64ACFF18",
+      "image_banner": "https://scontent.flim28-1.fna.fbcdn.net/v/t31.18172-8/17636920_1314866738600874_6139132272617177647_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=IVpx9umVmnAAX-eqHiv&_nc_ht=scontent.flim28-1.fna&oh=00_AfC2f8NFwIK7Jry12y5RlrkGrWzXTAzDvmVAPnYFM7F0ew&oe=64ACFF18",
+      "description": "Cine para los amantes del septimo arte, que quiere disfrutar de una buena pelicula en un ambiente agradable y con un buen servicio. Encontraras las mejores promociones para ti y tus amigos.",
+      "date_attention": "Abierto ahora: 1:00 p. m. - 00:00 a. m.",
+      "address": "Av Proceres 1050 Los olivos, Lima, Peru",
+      "reference_address": "",
+      "Owner_id": 5,
+      "BusinessType_id": 1
+    },
+    {
+      "id": 6,
+      "name": "Damazo Ogaz",
+      "social_reason": "CineClub Damaso SAC",
+      "RUC": "20789585477",
+      "phone": "963255140",
+      "email": "",
+      "image_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlSzcPQ76iziUUjKLD1CUM2kh1iROI0RnSJg&usqp=CAU",
+      "image_banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlSzcPQ76iziUUjKLD1CUM2kh1iROI0RnSJg&usqp=CAU",
+      "description": "Cine para los amantes del septimo arte, que quiere disfrutar de una buena pelicula en un ambiente agradable y con un buen servicio. Encontraras las mejores promociones para ti y tus amigos.",
+      "date_attention": "Abierto ahora: 1:00 p. m. - 00:00 a. m.",
+      "address": "Av Santa Rosa 1050 San Martin de Porres, Lima, Peru",
+      "reference_address": "",
+      "Owner_id": 6,
+      "BusinessType_id": 1
+    },
+    {
+      "id": 7,
+      "name": "Tondero",
+      "social_reason": "CineClub Tondero SAC",
+      "RUC": "10789585477",
+      "phone": "936255140",
+      "email": "",
+      "image_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ58goPraBjktA-2PD0y_z1F-PVO3Bsr2sy3MHNyuuOszZ8OSsz2X9e4NASZEqAGKLIsX0&usqp=CAU",
+      "image_banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ58goPraBjktA-2PD0y_z1F-PVO3Bsr2sy3MHNyuuOszZ8OSsz2X9e4NASZEqAGKLIsX0&usqp=CAU",
+      "description": "Te ofrecemos una experiencia única, donde podrás disfrutar de una buena película, en un ambiente agradable y con un buen servicio. Encontraras las mejores promociones para ti y tus amigos. No te lo pierdas.",
+      "date_attention": "Abierto ahora: 10:00 a. m. - 03:00 a. m.",
+      "address": "Av Santa Rosa 1050 San Martin de Porres, Lima, Peru",
+      "reference_address": "",
+      "Owner_id": 7,
+      "BusinessType_id": 2
+    }
+  ],
+  "BusinessType": [
+    {
+      "id": 1,
+      "name": "Autocinema"
+    },
+    {
+      "id": 2,
+      "name": "Bar-Cine"
+    },
+    {
+      "id": 3,
+      "name": "Café-Cine"
+    }
+  ],
+  "Film": [
+    {
+      "id": 1,
+      "title": "Parasite",
+      "year": 2019,
+      "synopsis": "Tanto Gi Taek como su familia están sin trabajo. Cuando su hijo mayor, Gi Woo, empieza a impartir clases particulares en la adinerada casa de los Park, las dos familias, que tienen mucho en común pese a pertenecer a dos mundos totalmente distintos, entablan una relación de resultados imprevisibles.",
+      "poster": "https://www.themoviedb.org/t/p/original/5uz9Se5HBxxPdJY38rPfyWUyjDZ.jpg",
+      "trailer": "https://www.youtube.com/embed/cR05bEhbWAs",
+      "duration": "2h 12min",
+      "ContentRating_id": 2
+    },
+    {
+      "id": 2,
+      "title": "Fast X",
+      "year": 2023,
+      "synopsis": "A lo largo de muchas misiones y contra viento y marea imposibles, Dom Toretto y su familia han burlado y superado a todos los enemigos en su camino. Ahora, deben enfrentarse al oponente más letal que jamás hayan enfrentado. Impulsada por la venganza, una amenaza aterradora emerge de las sombras del pasado para hacer añicos el mundo de Dom y destruir todo, y a todos, a los que ama.",
+      "poster": "https://elcomercio.pe/resizer/frYh9JMjTmkI_few0UyKK7WGvCU=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/K3ZVO6CHINGL5OWBS45TZM4BRI.jpg",
+      "trailer": "https://www.youtube.com/embed/eoOaKN4qCKw",
+      "duration": "2h 21min",
+      "ContentRating_id": 3
+    },
+    {
+      "id": 3,
+      "title": "Frances Ha",
+      "year": 2013,
+      "synopsis": "Frances no es una chica corriente, vive en Nueva York sin apartamento, estudia danza sin ser bailarina y tiene como mejor amiga a Sophie, aunque ahora no se hablen. Ella quiere más de lo que tiene, pero vive la vida con alegría y despreocupación.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTY0NDQ2NzQ2N15BMl5BanBnXkFtZTcwMTU0OTkwOQ@@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/embed/OejfPRbHmT4",
+      "duration": "1h 26m",
+      "ContentRating_id": 2
+    },
+    {
+      "id": 4,
+      "title": "Sin Novedad en el Frente",
+      "year": 2022,
+      "synopsis": "Paul, de 17 años, se une al Frente Occidental en la Primera Guerra Mundial, pero su entusiasmo inicial se ve truncado por la sombría realidad de la vida en las trincheras.",
+      "poster": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuJnlkLZV5_sT8TD1hrRpmkJCH_WPJ1xCFOLISc27Tcr7RhAix",
+      "trailer": "https://www.youtube.com/embed/XvqWZOPJN0Y",
+      "duration": "2h 28m",
+      "ContentRating_id": 3
+    },
+    {
+      "id": 5,
+      "title": "El niño con el pijama de rayas",
+      "year": 2008,
+      "synopsis": "Durante la Segunda Guerra Mundial, el pequeño hijo de un comandante de un campo de concentración desarrolla una amistad prohibida con un niño judío de 8 años.",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1dOa7GuOrUE3M-6P3Dwf5Et7xJnCMkSAeunAQSXcobdmVesMZ",
+      "trailer": "https://www.youtube.com/embed/dRUe8JR8iWY",
+      "duration": "1h 34m",
+      "ContentRating_id": 3
+    },
+    {
+      "id": 6,
+      "title": "Un Mundo para Julius",
+      "year": 2021,
+      "synopsis": "Julius es un niño de clase alta en la Lima de los años 50, quien poco a poco va perdiendo la inocencia, al descubrir y nunca comprender un mundo adulto lleno de desigualdades e injusticias.",
+      "poster": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJ9QixJzFsnRVepQPZ5WrV9WF_6IMnHWOMYO_IY6fUNcWhRdEk",
+      "trailer": "https://www.youtube.com/embed/btt8amaJqcc",
+      "duration": "1h 34m",
+      "ContentRating_id": 2
+    },
+    {
+      "id": 7,
+      "title": "Perfect Blue",
+      "year": 1998,
+      "synopsis": "Una misteriosa figura acecha a una estrella del pop que busca convertirse en actriz y así dejar de lado su infantil imagen.",
+      "poster": "https://m.media-amazon.com/images/I/91mKWo5f7gS._SL1500_.jpg",
+      "trailer": "https://www.youtube.com/embed/C1e1bT0Xjvw",
+      "duration": "1h 21m",
+      "ContentRating_id": 3
+    },
+    {
+      "id": 8,
+      "title": "Winnie the Pooh: Sangre y miel",
+      "year": 2023,
+      "synopsis": "Winnie the Pooh y Piglet se han vuelto salvajes y quieren sangre humana. Los antes entrañables amigos aterrorizan a Christopher Robin y un grupo de jóvenes en una casa aislada.",
+      "poster": "https://cloudfront-us-east-1.images.arcpublishing.com/gruponacion/HC5ICZE5HFDI7OQRTEH3TIZTPE.jpg",
+      "trailer": "https://www.youtube.com/embed/CDnA09G35vE",
+      "duration": "1h 40m",
+      "ContentRating_id": 3
+    },
+    {
+      "id": 9,
+      "title": "Rebelión en la granja",
+      "year": 1954,
+      "synopsis": "El cerdo Napoleón de George Orwell encabeza una rebelión de animales de corral que están en busca de igualdad. Narración de Gordon Heath.",
+      "poster": "https://pics.filmaffinity.com/animal_farm-977203545-large.jpg",
+      "trailer": "https://www.youtube.com/embed/onk6N3JkQDo",
+      "duration": "1h 12m",
+      "ContentRating_id": 2
+    }
+  ],
+  "ContentRating": [
+    {
+      "id": 1,
+      "name": "APT",
+      "description": "Apto para todos"
+    },
+    {
+      "id": 2,
+      "name": "M14",
+      "description": "Mayores de 14 años"
+    },
+    {
+      "id": 3,
+      "name": "M18",
+      "description": "Mayores de 18 años"
+    }
+  ],
+  "Category": [
+    {
+      "id": 1,
+      "name": "Comedia"
+    },
+    {
+      "id": 2,
+      "name": "Suspenso"
+    },
+    {
+      "id": 3,
+      "name": "Terror"
+    },
+    {
+      "id": 4,
+      "name": "Acción"
+    },
+    {
+      "id": 5,
+      "name": "Ciencia Ficción"
+    },
+    {
+      "id": 6,
+      "name": "Drama"
+    },
+    {
+      "id": 7,
+      "name": "Fantasía"
+    },
+    {
+      "id": 8,
+      "name": "Musical"
+    },
+    {
+      "id": 9,
+      "name": "Animación"
+    }
+  ],
+  "FilmCategory": [
+    {
+      "id": 1,
+      "Film_id": 1,
+      "Category_id": 2
+    },
+    {
+      "id": 2,
+      "Film_id": 1,
+      "Category_id": 6
+    },
+    {
+      "id": 3,
+      "Film_id": 2,
+      "Category_id": 4
+    },
+    {
+      "id": 4,
+      "Film_id": 2,
+      "Category_id": 5
+    },
+    {
+      "id": 5,
+      "Film_id": 3,
+      "Category_id": 1
+    },
+    {
+      "id": 6,
+      "Film_id": 3,
+      "Category_id": 6
+    },
+    {
+      "id": 7,
+      "Film_id": 4,
+      "Category_id": 2
+    },
+    {
+      "id": 8,
+      "Film_id": 4,
+      "Category_id": 4
+    },
+    {
+      "id": 9,
+      "Film_id": 5,
+      "Category_id": 2
+    },
+    {
+      "id": 10,
+      "Film_id": 5,
+      "Category_id": 6
+    },
+    {
+      "id": 11,
+      "Film_id": 6,
+      "Category_id": 2
+    },
+    {
+      "id": 12,
+      "Film_id": 6,
+      "Category_id": 6
+    },
+    {
+      "id": 13,
+      "Film_id": 7,
+      "Category_id": 2
+    },
+    {
+      "id": 14,
+      "Film_id": 7,
+      "Category_id": 4
+    },
+    {
+      "id": 15,
+      "Film_id": 7,
+      "Category_id": 5
+    },
+    {
+      "id": 15,
+      "Film_id": 7,
+      "Category_id": 9
+    },
+    {
+      "id": 16,
+      "Film_id": 8,
+      "Category_id": 3
+    },
+    {
+      "id": 17,
+      "Film_id": 8,
+      "Category_id": 5
+    },
+    {
+      "id": 18,
+      "Film_id": 9,
+      "Category_id": 5
+    },
+    {
+      "id": 19,
+      "Film_id": 9,
+      "Category_id": 9
+    }
+  ],
+  "Director": [
+    {
+      "id": 1,
+      "first_name": "Joon-ho",
+      "last_name": "Bong"
+    },
+    {
+      "id": 2,
+      "first_name": "Dan",
+      "last_name": "Kwan"
+    },
+    {
+      "id": 3,
+      "first_name": "Louis",
+      "last_name": "Leterrier"
+    }
+  ],
+  "FilmDirector": [
+    {
+      "id": 1,
+      "Film_id": 1,
+      "Director_id": 1
+    },
+    {
+      "id": 2,
+      "Film_id": 2,
+      "Director_id": 2
+    }
+  ],
+  "Actor": [
+    {
+      "id": 1,
+      "first_name": "Song",
+      "last_name": "Kang-ho",
+      "biography": "actor",
+      "birthdate": "1967-01-17"
+    },
+    {
+      "id": 2,
+      "first_name": "Lee",
+      "last_name": "Sun-kyun",
+      "biography": "actor",
+      "birthdate": "1975-03-02"
+    },
+    {
+      "id": 3,
+      "first_name": "Cho",
+      "last_name": "Yeo-jeong",
+      "biography": "actriz",
+      "birthdate": "1981-02-10"
+    },
+    {
+      "id": 4,
+      "first_name": "Mark",
+      "last_name": "Sinclair",
+      "biography": "actor",
+      "birthdate": "1967-07-18"
+    },
+    {
+      "id": 5,
+      "first_name": "Jason",
+      "last_name": "Momoa",
+      "biography": "actor",
+      "birthdate": "1979-08-1"
+    },
+    {
+      "id": 6,
+      "first_name": "Michelle",
+      "last_name": "Rodriguez",
+      "biography": "actriz",
+      "birthdate": "1978-07-12"
+    },
+    {
+      "id": 7,
+      "first_name": "Greta",
+      "last_name": "Gerwig",
+      "biography": "actriz",
+      "birthdate": "1983-08-4"
+    },
+    {
+      "id": 8,
+      "first_name": "Mickey",
+      "last_name": "Sumner",
+      "biography": "actriz",
+      "birthdate": "1984-01-19"
+    },
+    {
+      "id": 9,
+      "first_name": "Adam",
+      "last_name": "Driver",
+      "biography": "actor",
+      "birthdate": "1983-11-19"
+    },
+    {
+      "id": 10,
+      "first_name": "Daniel",
+      "last_name": "Brühl",
+      "biography": "actor",
+      "birthdate": "1978-06-16"
+    },
+    {
+      "id": 11,
+      "first_name": "Felix",
+      "last_name": "Kammerer",
+      "biography": "actor",
+      "birthdate": "1995-10-19"
+    },
+    {
+      "id": 12,
+      "first_name": "Albrecht",
+      "last_name": "Schuch",
+      "biography": "actor",
+      "birthdate": "1985-08-21"
+    },
+    {
+      "id": 13,
+      "first_name": "Asa",
+      "last_name": "Butterfield",
+      "biography": "actor",
+      "birthdate": "1997-04-1"
+    },
+    {
+      "id": 14,
+      "first_name": "Jack",
+      "last_name": "Scanlon",
+      "biography": "actor",
+      "birthdate": "1998-08-6"
+    },
+    {
+      "id": 15,
+      "first_name": "Vera",
+      "last_name": "Farmiga",
+      "biography": "actriz",
+      "birthdate": "1973-08-6"
+    },
+    {
+      "id": 16,
+      "first_name": "Augusto",
+      "last_name": "Linares",
+      "biography": "actor",
+      "birthdate": "1999-08-4"
+    },
+    {
+      "id": 17,
+      "first_name": "Mayella",
+      "last_name": "Lloclla",
+      "biography": "actriz",
+      "birthdate": "1986-03-31"
+    },
+    {
+      "id": 18,
+      "first_name": "Nacho",
+      "last_name": "Fresneda",
+      "biography": "actor",
+      "birthdate": "1971-06-19"
+    },
+    {
+      "id": 19,
+      "first_name": "Junko",
+      "last_name": "Iwao",
+      "biography": "actriz",
+      "birthdate": "1970-01-18"
+    },
+    {
+      "id": 20,
+      "first_name": "Rica",
+      "last_name": "Matsumoto",
+      "biography": "actriz",
+      "birthdate": "1983-02-15"
+    },
+    {
+      "id": 21,
+      "first_name": "Hideyuki",
+      "last_name": "Hori",
+      "biography": "actor",
+      "birthdate": "1979-06-19"
+    },
+    {
+      "id": 22,
+      "first_name": "Natasha",
+      "last_name": "Tosini",
+      "biography": "actriz",
+      "birthdate": "1989-07-14"
+    },
+    {
+      "id": 23,
+      "first_name": "Amber",
+      "last_name": "Doig-Thorne",
+      "biography": "actriz",
+      "birthdate": "1979-03-11"
+    },
+    {
+      "id": 24,
+      "first_name": "Craig",
+      "last_name": "Dowsett",
+      "biography": "actor",
+      "birthdate": "1987-03-11"
+    },
+    {
+      "id": 25,
+      "first_name": "Maurice",
+      "last_name": " Denham",
+      "biography": "actor",
+      "birthdate": "1947-02-14"
+    },
+    {
+      "id": 26,
+      "first_name": "Gordon",
+      "last_name": "Heath",
+      "biography": "actor",
+      "birthdate": "1934-01-16"
+    },
+    {
+      "id": 27,
+      "first_name": "Simon",
+      "last_name": "Cadell",
+      "biography": "actor",
+      "birthdate": "1941-04-21"
+    }
+  ],
+  "FilmActor": [
+    {
+      "id": 1,
+      "Film_id": 1,
+      "Actor_id": 1
+    },
+    {
+      "id": 2,
+      "Film_id": 1,
+      "Actor_id": 2
+    },
+    {
+      "id": 3,
+      "Film_id": 1,
+      "Actor_id": 3
+    },
+    {
+      "id": 4,
+      "Film_id": 2,
+      "Actor_id": 4
+    },
+    {
+      "id": 5,
+      "Film_id": 2,
+      "Actor_id": 5
+    },
+    {
+      "id": 6,
+      "Film_id": 2,
+      "Actor_id": 6
+    },
+    {
+      "id": 7,
+      "Film_id": 3,
+      "Actor_id": 7
+    },
+    {
+      "id": 8,
+      "Film_id": 3,
+      "Actor_id": 8
+    },
+    {
+      "id": 9,
+      "Film_id": 3,
+      "Actor_id": 9
+    },
+    {
+      "id": 10,
+      "Film_id": 4,
+      "Actor_id": 10
+    },
+    {
+      "id": 11,
+      "Film_id": 4,
+      "Actor_id": 11
+    },
+    {
+      "id": 12,
+      "Film_id": 4,
+      "Actor_id": 12
+    },
+    {
+      "id": 13,
+      "Film_id": 5,
+      "Actor_id": 13
+    },
+    {
+      "id": 14,
+      "Film_id": 5,
+      "Actor_id": 14
+    },
+    {
+      "id": 15,
+      "Film_id": 5,
+      "Actor_id": 15
+    },
+    {
+      "id": 16,
+      "Film_id": 6,
+      "Actor_id": 16
+    },
+    {
+      "id": 17,
+      "Film_id": 6,
+      "Actor_id": 17
+    },
+    {
+      "id": 18,
+      "Film_id": 6,
+      "Actor_id": 18
+    },
+    {
+      "id": 19,
+      "Film_id": 7,
+      "Actor_id": 19
+    },
+    {
+      "id": 20,
+      "Film_id": 7,
+      "Actor_id": 20
+    },
+    {
+      "id": 21,
+      "Film_id": 7,
+      "Actor_id": 21
+    },
+    {
+      "id": 22,
+      "Film_id": 8,
+      "Actor_id": 22
+    },
+    {
+      "id": 23,
+      "Film_id": 8,
+      "Actor_id": 23
+    },
+    {
+      "id": 24,
+      "Film_id": 8,
+      "Actor_id": 24
+    },
+    {
+      "id": 25,
+      "Film_id": 9,
+      "Actor_id": 25
+    },
+    {
+      "id": 26,
+      "Film_id": 9,
+      "Actor_id": 26
+    },
+    {
+      "id": 27,
+      "Film_id": 9,
+      "Actor_id": 27
+    }
+  ],
+  "ShowTime": [
+    {
+      "id": 1,
+      "Film_id": 1,
+      "date": "2023-06-09 20:00",
+      "price": 10.5,
+      "Business_id": 1
+    },
+    {
+      "id": 2,
+      "Film_id": 1,
+      "date": "2023-06-09 16:45",
+      "price": 12,
+      "Business_id": 1
+    },
+    {
+      "id": 3,
+      "Film_id": 2,
+      "date": "2023-06-09 19:45",
+      "price": 15,
+      "Business_id": 2
+    },
+    {
+      "id": 4,
+      "Film_id": 2,
+      "date": "2023-06-10 19:45",
+      "price": 15,
+      "Business_id": 2
+    },
+    {
+      "id": 5,
+      "Film_id": 2,
+      "date": "2023-06-10 21:45",
+      "price": 15,
+      "Business_id": 1
+    },
+    {
+      "id": 6,
+      "Film_id": 3,
+      "date": "2023-06-11 21:45",
+      "price": 10,
+      "Business_id": 2
+    },
+    {
+      "id": 7,
+      "Film_id": 3,
+      "date": "2023-06-10 18:00",
+      "price": 25,
+      "Business_id": 1
+    },
+    {
+      "id": 8,
+      "Film_id": 3,
+      "date": "2023-06-11 19:45",
+      "price": 15,
+      "Business_id": 2
+    },
+    {
+      "id": 9,
+      "Film_id": 4,
+      "date": "2023-06-10 20:00",
+      "price": 15,
+      "Business_id": 2
+    },
+    {
+      "id": 10,
+      "Film_id": 4,
+      "date": "2023-06-11 19:45",
+      "price": 20,
+      "Business_id": 1
+    },
+    {
+      "id": 11,
+      "Film_id": 5,
+      "date": "2023-06-10 19:45",
+      "price": 20,
+      "Business_id": 2
+    },
+    {
+      "id": 12,
+      "Film_id": 5,
+      "date": "2023-06-10 21:45",
+      "price": 20,
+      "Business_id": 1
+    },
+    {
+      "id": 13,
+      "Film_id": 6,
+      "date": "2023-06-11 21:45",
+      "price": 14,
+      "Business_id": 2
+    },
+    {
+      "id": 14,
+      "Film_id": 6,
+      "date": "2023-06-11 18:45",
+      "price": 14,
+      "Business_id": 2
+    },
+    {
+      "id": 15,
+      "Film_id": 6,
+      "date": "2023-06-10 21:45",
+      "price": 10,
+      "Business_id": 1
+    },
+    {
+      "id": 16,
+      "Film_id": 7,
+      "date": "2023-06-11 20:45",
+      "price": 16,
+      "Business_id": 1
+    },
+    {
+      "id": 17,
+      "Film_id": 7,
+      "date": "2023-06-11 21:45",
+      "price": 10,
+      "Business_id": 2
+    },
+    {
+      "id": 18,
+      "Film_id": 8,
+      "date": "2023-06-11 18:45",
+      "price": 20,
+      "Business_id": 2
+    },
+    {
+      "id": 19,
+      "Film_id": 8,
+      "date": "2023-06-10 21:45",
+      "price": 10,
+      "Business_id": 1
+    },
+    {
+      "id": 20,
+      "Film_id": 8,
+      "date": "2023-06-11 20:45",
+      "price": 10,
+      "Business_id": 2
+    },
+    {
+      "id": 21,
+      "Film_id": 9,
+      "date": "2023-06-11 20:45",
+      "price": 10,
+      "Business_id": 1
+    },
+    {
+      "id": 22,
+      "Film_id": 9,
+      "date": "2023-06-11 21:45",
+      "price": 10,
+      "Business_id": 1
+    }
+  ],
+  "Ticket": [
+    {
+      "id": 1,
+      "Customer_id": 1,
+      "ShowTime_id": 1,
+      "number_seats": 2,
+      "total_price": 21
+    },
+    {
+      "number_seats": 2,
+      "total_price": 21,
+      "Showtime_id": 1,
+      "id": 2
+    },
+    {
+      "ShowTime_id": {
+        "id": 2
+      },
+      "Customer_id": {
+        "id": 1
+      },
+      "number_seats": 2,
+      "total_price": 26,
+      "id": 3
+    },
+    {
+      "ShowTime_id": {
+        "id": 1
+      },
+      "Customer_id": {
+        "id": 1
+      },
+      "number_seats": 2,
+      "total_price": 21,
+      "id": 4
+    },
+    {
+      "ShowTime_id": {
+        "id": 1
+      },
+      "Customer_id": {
+        "id": {
+          "id": 1,
+          "firstName": "Tania",
+          "lastName": "Vasqquez",
+          "birthdate": "1990-01-01",
+          "phone": "12345678",
+          "photo": "https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png",
+          "email": "tania@gmail.com",
+          "password": "12345678",
+          "numberDni": "12345678"
+        }
+      },
+      "number_seats": 2,
+      "total_price": 21,
+      "id": 5
+    },
+    {
+      "ShowTime_id": {
+        "id": 1
+      },
+      "Customer_id": {
+        "id": 1
+      },
+      "number_seats": 1,
+      "total_price": 10.5,
+      "id": 6
+    },
+    {
+      "ShowTime_id": {
+        "id": 1
+      },
+      "Customer_id": {
+        "id": 1
+      },
+      "number_seats": 2,
+      "total_price": 21,
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<div class="filter-content">
+  <h1>Filtros</h1>
+  <mat-form-field appearance="outline">
+    <mat-label>Genero</mat-label>
+    <mat-select [(ngModel)]="selectedGenre">
+      <mat-option *ngFor="let genre of genres" [value]="genre">
+        {{genre.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Ordenar por</mat-label>
+    <mat-select [(ngModel)]="selectedOrder">
+      <mat-option *ngFor="let ord of order" [value]="ord">
+        {{ord.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-stroked-button (click)="enviarFiltros()">
+    Filtrar
+  </button>
+
+</div>

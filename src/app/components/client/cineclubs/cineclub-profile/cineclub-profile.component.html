@@ -1,0 +1,55 @@
+<ng-container>
+    <div class="card">
+        <div class="poster flex align-items-center justify-content-center ">
+            <img src={{cineclub.imageBanner}} alt="banner">
+        </div>
+        <div class="flex flex-column card-container">
+            <div class="flex align-items-center justify-content-center ">
+                <div class="general flex flex-column">
+                    <div class="grid">                        
+                        <div class="col-12 md:col-6 ">
+                            <div class="flex flex-column pt-5 ">
+                                <div class="flex flex-row align-content-center">
+                                    <h1 class="pr-3" style="font-size: 24px;">
+                                        <strong> {{cineclub.businessType!.name}} {{cineclub.name}}</strong>
+                                    </h1>
+                                    <mat-icon style="color: #FFAD00;">bookmark</mat-icon>
+                                  </div>
+                                <div class="flex pb-2">
+                                    <p>{{cineclub.description}}</p>
+                                </div>
+                                <div class="address flex-colum pb-2">
+                                    <div class="flex flex-row align-content-center">                                   
+                                        <mat-icon class="flex align-items-center justify-content-center pr-2" style="color: #FFAD00;">location_on</mat-icon>
+                                        <h1 class="flex align-items-center justify-content-center" style="font-size: 24px; color: #FFAD00;"> <strong>Dirección</strong></h1>
+                                    </div>
+                                    <p>{{cineclub.address}}</p>
+                                    <p><strong>Referencias: </strong>{{cineclub.referenceAddress}} </p>
+                                </div>
+                                <div class="date">
+                                    <div class="flex flex-row">                                   
+                                        <mat-icon class="pr-2" style="color: #FFAD00;">schedule</mat-icon>
+                                        <h1 style="font-size: 24px; color: #FFAD00;"> <strong>Horario de atención</strong> </h1>
+                                    </div>
+                                    <p>{{cineclub.dateAttention}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 md:col-6">
+                            <cineclubs-movies-available></cineclubs-movies-available>                    
+                        </div>
+                    </div>
+                    <div>
+                        <!-- comentarios -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex align-items-center justify-content-center ">
+                
+            </div>
+        </div>
+    </div>
+</ng-container>
+

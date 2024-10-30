@@ -1,0 +1,52 @@
+.bt-login{
+    background-color: #FFAD00;
+
+}
+.login-button {
+  background-color: #ffc107;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  width: 100px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-button:hover {
+  background-color: #ff9800;
+}
+
+
+.bt-forgot-password{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3B82F6;
+}
+
+.mat-mdc-raised-button.mat-unthemed {
+    --mdc-protected-button-container-color: #FFAD00;
+    --mdc-protected-button-label-text-color: #FFFF;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+  text-justify: auto;
+  border-radius: 4px;
+  background-color: #F84343;
+  height: 2rem;
+}

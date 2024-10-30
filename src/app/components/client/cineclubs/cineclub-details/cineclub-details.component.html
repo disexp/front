@@ -1,0 +1,24 @@
+<div class="flex flex-column pt-5 ">
+    <div class="flex flex-row align-content-center">
+        <h1 class="pr-3"> {{cineclubProfile[pos-1].title}} </h1>
+        <mat-icon>bookmark</mat-icon>
+    </div>
+    <div class="flex pb-2">
+        <p>{{cineclubProfile[pos-1].description}}</p>
+    </div>
+    <div class="address flex-colum pb-2">
+        <div class="flex flex-row align-content-center">                                   
+            <mat-icon class="flex align-items-center justify-content-center pr-2">location_on</mat-icon>
+            <h1 class="flex align-items-center justify-content-center">Dirección</h1>
+        </div>
+        <p>{{cineclubProfile[pos-1].address}}</p>
+    </div>
+    <div class="date">
+        <div class="flex flex-row">                                   
+            <mat-icon class="pr-2">schedule</mat-icon>
+            <h1>Horario de atención</h1>
+        </div>
+        <p>{{cineclubProfile[pos-1].attention}}
+        </p>
+    </div>
+</div>

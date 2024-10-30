@@ -1,0 +1,23 @@
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+
+.bar-container input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 1;
+  padding: 5px;
+}
+
+.bar-container button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

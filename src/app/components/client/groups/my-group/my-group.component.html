@@ -1,0 +1,9 @@
+<div class="container">
+  <mat-card *ngFor="let group of groups" class="card">
+    <div class="image-container" [style.background-image]="'url(' + imageUrl + ')'">
+      <div class="title-container">
+        <h2 class="title">{{group.name}}</h2>
+      </div>
+    </div>
+  </mat-card>
+</div>

@@ -1,0 +1,37 @@
+<nav class="flex align-items-center tucine-nav-bar" mat-tab-nav-bar color="primary" >
+
+  <div class="m-2 flex align-items-center tucine-logo">
+      <a><img class = "max-h-3rem" src="https://i.postimg.cc/T2JxZZ2d/brand.png" alt="TuCine"></a>
+  </div>
+
+  <div class="m-0 flex align-items-center">
+      <a class="nav-options" mat-tab-link *ngFor="let link of links" [routerLink]="['/dashboard', link.toLowerCase()]" routerLinkActive="router-link-active" (click)="activeLink = link" [active]="activeLink == link">
+        {{link}}
+        <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="link === 'Mis grupos'">
+            <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item [routerLink]="['/dashboard/crear-grupo']">Crear nuevo grupo</button>
+            <button mat-menu-item [routerLink]="['/dashboard/mis-grupos']">Mis grupos</button>
+        </mat-menu>
+      </a>
+  </div>
+
+  <span class="tu-cine"></span>
+
+  <div class="flex align-items-center">
+    <a class="nav-icon" mat-button><mat-icon>shopping_cart</mat-icon></a>
+    <a class="nav-icon" mat-button><mat-icon>chat_bubble</mat-icon></a>
+    <a class="nav-icon" mat-button><mat-icon>notifications</mat-icon></a>
+    <a class="nav-icon" mat-button [routerLink]="['/dashboard/perfil']"><mat-icon>account_circle</mat-icon></a>
+
+  </div>
+
+</nav>
+  <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+
+
+
+
+
+

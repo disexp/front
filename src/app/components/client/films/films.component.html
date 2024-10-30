@@ -1,0 +1,6 @@
+<div class="container">
+  <app-filter-bar (emiteFiltros)="applyFilter($event)"></app-filter-bar>
+  <app-movie-poster [imageUrl]="currentMovieImage"></app-movie-poster>
+  <app-search-bar></app-search-bar>
+  <app-weekly-film [movies]="Films"></app-weekly-film>
+</div>

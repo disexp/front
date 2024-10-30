@@ -1,0 +1,150 @@
+.profile {
+  // display: flex;
+  max-width: 800px;
+  width: 100%;
+  margin: 40px auto;
+  flex-direction: column;
+  // align-items: center;
+  gap: 20px;
+
+  .profile-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .start-date {
+      font-weight: bold;
+    }
+  }
+
+  .profile-cards {
+    display: flex;
+    flex-direction: column;
+    // align-items:flex-start; /* Alinea las tarjetas a la izquierda de la imagen */
+
+    .card {
+      margin-bottom: 20px;
+
+      .card-title {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+
+        .card-lenght {
+          margin-left: 10px;
+          font-size: 14px;
+          width: 25px;
+          height: 25px;
+          display: flex;
+          border-radius: 50px;
+          justify-content: center;
+          align-items: center;
+          background-color: orange;
+        }
+      }
+
+      .groups {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+
+        .group {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+          border: 1px solid gray;
+          border-radius: 10px;
+
+          .group-image {
+            width: 120px;
+            height: 100px;
+          }
+          .group-title {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .cinemas {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+
+        .cinema {
+          height: 100px;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+          border: 1px solid gray;
+          border-radius: 10px;
+        }
+
+        .cinema-img {
+          width: 120px;
+          height: 100px;
+        }
+
+        .cinema-title, .cinema-subtitle {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .add-new {
+      height: 100px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid none;
+      background-color: rgb(185, 185, 185);
+      border-radius: 10px;
+
+      .txt-add {
+        font-size: 24px;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    .add-new:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.profile-edit {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  margin-top: 60px;
+
+  .edit-button {
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: orange;
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+  .edit-button:hover {
+    cursor: pointer;
+  }
+}
+
+.photo-user {
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}

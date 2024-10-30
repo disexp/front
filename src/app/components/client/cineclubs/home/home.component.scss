@@ -1,0 +1,18 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.container-cineclubs{
+  margin-left: 11.5rem;
+  margin-right: 11.5rem;
+}
+
+@media (max-width: 600px) {
+  .container-cineclubs {
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+}

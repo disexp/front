@@ -1,0 +1,41 @@
+
+
+.content > mat-card {
+    margin-bottom: 16px;
+}
+
+.post-card {
+
+    max-width: 386px;
+    height: 268px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url('https://i.postimg.cc/L6M5SRt7/post-card.png');
+
+    mat-card-header{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 15px;
+
+        .avatar-header-image {
+            background-image: url('https://i.postimg.cc/WbFfVRfH/Mask-group-2.png');
+            background-size: cover;
+            margin-bottom: 0%;
+          }
+
+        mat-card-title{
+        font-size: 14px;
+        font-weight: bold;
+        color: #E28300;
+    }
+    }
+}
+
+mat-card-subtitle{
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    padding-left: 15px;
+}
+

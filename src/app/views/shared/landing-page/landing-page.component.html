@@ -1,0 +1,440 @@
+<head>
+  <link rel="icon" type="image/png" sizes="144x144" src="https://i.postimg.cc/T2JxZZ2d/brand.png" >
+  <!-- <link rel="manifest" href="Imagenes/Favicon/manifest.json"> -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="Imagenes/Favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width-device-width", initial-scale="1.0"> -->
+  <title>TuCine</title>
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos para el efecto de gotas derretidas */
+    .melting-drops {
+      position: relative;
+      height: 100px;
+      background-color: #FFAD00;
+      overflow: hidden;
+    }
+
+    .melting-drops:before,
+    .melting-drops:after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      width: 100%;
+      height: 60px;
+      background-color: #fff;
+      border-radius: 50%;
+      transform: translateY(50%);
+    }
+
+    .melting-drops:before {
+      left: -25%;
+      animation: melting-drop-left 5s linear infinite;
+    }
+
+    .melting-drops:after {
+      right: -25%;
+      animation: melting-drop-right 5s linear infinite;
+    }
+
+    @keyframes melting-drop-left {
+      0% {
+        transform: translateY(50%) rotate(0);
+      }
+      50% {
+        transform: translateY(50%) rotate(180deg);
+      }
+      100% {
+        transform: translateY(50%) rotate(0);
+      }
+    }
+
+    @keyframes melting-drop-right {
+      0% {
+        transform: translateY(50%) rotate(0);
+      }
+      50% {
+        transform: translateY(50%) rotate(-180deg);
+      }
+      100% {
+        transform: translateY(50%) rotate(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--navigation bar-->
+  <header>
+      <a href="index.html">
+          <img src="https://i.postimg.cc/T2JxZZ2d/brand.png" height="80" alt="tucine logo">
+      </a>
+      <button class="menu" aria-label="Open menu">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+      </button>
+
+      <nav class="nav active">
+          <ul class="navbar">
+              <li>
+                  <a href="#giro">Inicio</a>
+              </li>
+    
+              <li>
+                  <a href="#find-talend">Caracteristicas</a>
+              </li>
+              <li>
+                <a href="#plan">Planes</a>
+            </li>
+              <li>
+                  <a href="#testimonial">Testimonios</a>
+              </li>
+              <li>
+                  <a href="#AboutUs">Sobre Nosotros</a>
+              </li>
+              <li>
+                  <a href="#form">Ayuda</a>
+              </li>
+
+              <li>
+                <button (click)="redirectToAuthPage()">Iniciar Sesión</button>
+                <button (click)="redirectToElection()">Registrarse</button>
+              </li>
+          </ul>
+      </nav>
+
+  </header>
+  
+  <main class="container">
+  <!-- Hero Section -->
+    <section id="giro" class="giro">
+        <div class="hero-text">
+          <br>
+          <br>
+          <img src="https://i.postimg.cc/rwxpDpkr/HeroLogo.png" alt="herologo">
+          <br>
+          <p style="color: black;">TuCine ofrece una diversidad de locaciones para <br>disfrutar esa película especial,
+              conoce y organiza salidas <br> grupales con personas aficionadas al cine.</p>
+          <br>
+
+          <button (click)="redirectToAuthPage()" class="btn-hero" href="#download">COMENZAR</button>
+          <br>
+          <br>
+          <div class="download-ios-and">
+              <img src="https://i.postimg.cc/25TrWbXV/google-Play.png" alt="Google play">
+              <img src="https://i.postimg.cc/0yszdSZf/appStore.png" alt="App Store">
+          </div>
+
+        </div>
+    </section>
+    <div class="melting-drops"></div>
+   <!--Description TuCine -->
+   <section class="description-section" id="find-talend">
+   
+      <section class="container">
+          <div class="description-title">
+              <div class="medio-circulo"></div>
+              <h2 class="description-heading">Conéctate con otros cinéfilos y descubre el cine de nicho</h2>
+              <p class="description-text">Descubre una selección única de películas no comerciales en cines universitarios, café-cines y otros espacios culturales en Perú.</p>
+          </div>
+
+          <div class="description-content">
+
+              <article class="about__description">
+
+                  <div class="image-box">
+                      <img src="https://i.postimg.cc/1RVXkBjB/films-description.png">
+                  </div>
+
+                  <div class="about__description__content">
+                      <div class="medio-circulo"></div>
+                      <span class="about__description__number">01.</span>
+                      <h3 class="about__description__title">Encontrarás clásicos</h3>
+                      <p class="about__description__text">Descubre nuevas películas de nicho y conoce los clásicos que se han convertido en referentes del cine independiente y experimental.</p>
+                      <button  type="button" class="btn-description">
+                          <span class="btn-text">COMENZAR</span>
+                          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                          </svg>
+
+                      </button>
+                  </div>
+
+              </article>
+
+              <article class="about__description flex-reverse">
+
+                  <div class="image-box">
+                      <img src="https://i.postimg.cc/NGXGJMKP/reservation-description.png">
+                  </div>
+
+
+                  <div class="about__description__content">
+                      <div class="medio-circulo"></div>
+                      <span class="about__description__number">02.</span>
+                      <h3 class="about__description__title">Reservas</h3>
+                      <p class="about__description__text">¿Quieres compartir tu pasión por el cine de nicho con otros cinéfilos? Con nuestra aplicación, podrás organizar salidas grupales para ver películas en compañía de otros amantes del cine independiente y experimental.</p>
+                      <button type="button" class="btn-description">
+                          <span class="btn-text">COMENZAR</span>
+                          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                          </svg>
+                      </button>
+                  </div>
+
+              </article>
+
+              <article class="about__description">
+
+                <div class="image-box">
+                    <img src="https://i.postimg.cc/bwwhhNvP/grupal-description.png" class="about__img">
+                </div>
+
+                  <div class="about__description__content">
+                      <div class="medio-circulo"></div>
+                      <span class="about__description__number">03.</span>
+                      <h3 class="about__description__title">Organiza tus salidas grupales</h3>
+                      <p class="about__description__text">Evita las colas y asegura tu entrada a las películas de nicho que deseas ver reservando tus entradas con nuestra aplicación.</p>
+                      <button type="button" class="btn-description">
+                          <span class="btn-text">COMENZAR</span>
+                          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                          </svg>
+                      </button>
+                  </div>
+
+              </article>
+
+              <article class="about__description flex-reverse">
+
+                  <div class="image-box">
+                      <img src="https://i.postimg.cc/vZNpwrj7/merch-description.png" class="about__img">
+                  </div>
+
+                  <div class="about__description__content">
+                      <div class="medio-circulo"></div>
+                      <span class="about__description__number">04.</span>
+                      <h3 class="about__description__title">Merch</h3>
+                      <p class="about__description__text">Desde camisetas y tazas hasta carteles y otros artículos de colección, nuestra aplicación te permite obtener merchandising exclusivo que no encontrarás en ningún otro lugar. Demuestra tu pasión por el cine de nicho con estilo.</p>
+                      <button type="button" class="btn-description">
+                          <span class="btn-text">COMENZAR</span>
+                          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                          </svg>
+                      </button>
+                  </div>
+              </article>
+
+          </div>
+
+        </section>
+        <div class="melting-drops"></div>
+    <section class="testimonial-section" id="testimonial">
+
+      <div class="testimonial-title">
+          <h2 class="testimonial-heading">No estás solo!</h2>
+          <p class="testimonial-text">Únete a una comunidad de miembros
+          que comparten la mismas aficiones que tú y organiza salidas
+          grupales</p>
+      </div>
+
+      <div class="container">
+          <div class="testimonial-cards">
+
+              <div class="testimonial-card">
+                  <div class="testimonial-card__img">
+                      <img src="https://i.postimg.cc/SQd1pLYX/persona1-testimonio.png">
+                  </div>
+
+                  <div class="testimonial-card__content">
+                      <p class="testimonial-user">Carla Muñante</p>
+                      <div></div>
+                      <p class="testimonial-summary">¡Totalmente recomendado!</p>
+                      <p class="testimonial-description">Con esta plataforma he conocido gente nueva que comparte mis intereses en cine de nicho y he asistido a proyecciones que de otra manera no habría conocido.</p>
+                  </div>
+              </div>
+
+              <div class="testimonial-card">
+
+                  <div class="testimonial-card__img">
+                      <img src="https://i.postimg.cc/wvV2gHMK/persona2-testimonio.png">
+                  </div>
+
+                  <div class="testimonial-card__content">
+                      <p class="testimonial-user">Fernando Ibañez</p>
+                      <div></div>
+                      <p class="testimonial-summary">Exactamente lo que necesitaba</p>
+                      <p class="testimonial-description">Con esta aplicación he encontrado una amplia selección de películas interesantes y he podido conectarme con otros cinéfilos para disfrutar del cine de nicho juntos. ¡Una gran experiencia!</p>
+                  </div>
+              </div>
+
+              <div class="testimonial-card">
+
+                  <div class="testimonial-card__img">
+                      <img src="https://i.postimg.cc/k4nNjZcT/persona3-testimonio.png">
+                  </div>
+
+                  <div class="testimonial-card__content">
+                      <p class="testimonial-user">Melissa Herrera</p>
+                      <div></div>
+                      <p class="testimonial-summary">La aplicación es muy fácil de usar</p>
+                      <p class="testimonial-description">Esta app me ha permitido descubrir nuevas películas y espacios culturales para ver cine de nicho en Perú. Además, la sección de reservas me ha ahorrado mucho tiempo. ¡Definitivamente recomiendo esta aplicación a cualquier amante del cine de nicho!"</p>
+                  </div>
+              </div>
+
+          </div>
+
+          <button class="btn-description">Comenzar</button>
+      </div>
+
+
+    </section>
+
+   </section>
+
+  </main>
+
+<!-- Plan Section -->
+
+<section class="plan-section" id="plan">
+  <div class="contenedor">
+   <div class="tabla">
+       <h2>Basic</h2>
+       <!-- <img src="assets/img/8.jpg" alt=""> -->
+       <h3>US$7.99</h3>
+       <p>Empezar a enviar mensajes</p>
+       <p>Reuniones de equipos flexibles</p>
+       <p>2TB Cloud Storage.</p>
+       <a href="" class="boton">Comenzar</a>
+   </div>
+   <div class="tabla">
+       <h2>Startup</h2>
+       <!-- <img src="assets/img/6.jpg" alt=""> -->
+       <h3>US$14.99 </h3>
+       <p>Todas las funciones en basico</p>
+       <p>Programacion de llamdas flexibles</p>
+       <p>15TB Cloud Storage.</p>
+       <a href=""class="boton">Comenzar</a>
+   </div>
+   <div class="tabla">
+       <h2>Enterprise</h2>
+       <!-- <img src="assets/img/7.jpg" alt=""> -->
+       <h3>US$ 25.99</h3>
+       <p>Todas las funciones de la plataforma</p>
+       <p>Growth Oriented.</p>
+       <p>Unlimited Cloud Storage.</p>
+       <a href=""class="boton">Comenzar</a>
+   </div>
+
+  </div>
+
+</section>
+
+  <main class="container">
+
+    <section id="AboutUs" class="AboutUs">
+
+      <h1>Respaldado por un gran equipo</h1>
+      <h4>TUCINE es una Startup formada por un grupo de estudiantes de
+          la Universidad Peruana de Ciencias Aplicadas, quienes buscan soluciones para los diferentes problemas que
+          pueden surgir en el día a día de las personas, a través de desarrollos tecnológicos creados por el equipo</h4>
+
+      <ul class="grid">
+          <li>
+              <div class="item"><img src="https://i.postimg.cc/7ZKTH6Mn/Tania2.png" alt="Tania"></div>
+              <h4>Tania Vasquez</h4>
+              <p>Únete a una comunidad de miembros comparten la misma pasión por el cine</p>
+          </li>
+          <li>
+              <div class="item"><img src="https://i.postimg.cc/yYVdDKNQ/Axel1.png" alt="Axel"></div>
+              <h4>Axel Fiestas</h4>
+              <p>La mejor plataforma para conocer personas y disfrutar de tus peliculas favoritas</p>
+          </li>
+
+          <li>
+              <div class="item"><img src="https://i.postimg.cc/hjrkwkqv/Yeni1.png" alt="Yeni"></div>
+              <h4>Yeni Alvarado</h4>
+              <p>Vive una experiencia única  disfrutando del séptimo arte, junto a nuevas personas</p>
+          </li>
+
+          <li>
+              <div class="item"><img src="https://i.postimg.cc/tT2cDFhV/Julio1.png" alt="Julio"></div>
+              <h4>Julio Moron</h4>
+              <p>Se parte de esta comunidad de cinéfilos e interactua con otras personas</p>
+          </li>
+
+          <li>
+              <div class="item"><img src="https://i.postimg.cc/7Ptc2MHF/Juan1.png" alt="Juan"></div>
+              <h4>Juan Navarro</h4>
+              <p>Una aplicación que reune personas apasionadas por el cine y que interactuen entre ellas</p>
+          </li>
+      </ul>
+
+    </section>
+<!--    form-->
+  <section class="form" id="form">
+
+  <div class="section1">
+      <img src="https://i.postimg.cc/L4WCX9vR/Group.png" alt="logo-brand">
+      <h1 >Estamos para resolver <br> tus dudas</h1>
+  </div>
+
+  <div class="form-signup">
+      <h2>TuCine</h2>
+
+      <input class="controls" type="text" placeholder="Nombre">
+      <input class="controls" type="text" placeholder="Year or birth">
+      <input class="controls" type="email" placeholder="Email">
+      <input class="controls" type="text" placeholder="Telephone">
+      <input class="controls" type="text" placeholder="Transmite tu duda">
+      <input class="controls-checkbox" type="checkbox" value="" id="invalidCheck" required>I agree to terms and conditions the privacy policy.
+      <button>Enviar</button>
+
+  </div>
+
+  </section>
+
+  </main>
+  <!--Footer-->
+  <footer>
+    <div class="footer-container">
+      <div class="logo">
+        <img src="https://i.postimg.cc/mDzd3K2K/logo.png" alt="Tu Cine">
+      </div>
+      <p class="slogan">Mira el mundo de manera diferente</p>
+      <div class="explore">
+        <h3>Explorar</h3>
+        <ul>
+          <li><a href="#form">Ayuda</a></li>
+          <li><a href="#AboutUs">Sobre Nosotros</a></li>
+          <li><a href="#testimonial">Testimonios</a></li>
+          <li><a href="#plan">Planes</a></li>
+          <li><a href="#find-talend">Características</a></li>
+          <li><a href="#giro">Inicio</a></li>
+        </ul>
+      </div>
+      <div class="redes">
+        <h3>Redes</h3>
+        <ul>
+          <li><a href="#1">Facebook</a></li>
+          <li><a href="#2">Youtube</a></li>
+          <li><a href="#3">Twitter</a></li>
+          <li><a href="#4">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>&copy; 2023 Tu Cine. Todos los derechos reservados.</p>
+          <p>Contacto: info@tucine.com</p>
+          <p>Dirección: Calle Principal 123, Ciudad, País</p>
+        </div>
+      </div>
+      
+    </div>
+  </footer>
+</body>

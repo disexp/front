@@ -1,0 +1,500 @@
+{
+  "Gender":[
+    {
+      "id":1,
+      "name":"Femenino"
+    },
+    {
+      "id":2,
+      "name":"Masculino"
+    },
+    {
+      "id":3,
+      "name":"Otros"
+    }
+  ],
+  "TypeUser":[
+    {
+      "id":1,
+      "name":"Customer"
+    },
+    {
+      "id":2,
+      "name":"Owner"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Parasite",
+      "year": 2019,
+      "duration": "2h 12min",
+      "poster": "https://www.themoviedb.org/t/p/original/5uz9Se5HBxxPdJY38rPfyWUyjDZ.jpg",
+      "trailer": "https://www.youtube.com/embed/cR05bEhbWAs",
+      "director": "Bong Joon-ho",
+      "genres": [
+        "thriller",
+        "comedy",
+        "mystery",
+        "drama"
+      ],
+      "synopsis": "Tanto Gi Taek como su familia están sin trabajo. Cuando su hijo mayor, Gi Woo, empieza a impartir clases particulares en la adinerada casa de los Park, las dos familias, que tienen mucho en común pese a pertenecer a dos mundos totalmente distintos, entablan una relación de resultados imprevisibles.",
+      "schedule": [
+        {
+          "id": 1,
+          "day": "2023-05-13",
+          "hour": [
+            "17:30",
+            "18:00"
+          ],
+          "cineclub": "Autocine Lima Park"
+        },
+        {
+          "id": 2,
+          "day": "2023-05-14",
+          "hour": [
+            "18:30",
+            "20:00"
+          ],
+          "cineclub": "Autocinema Tondero"
+        }
+      ],
+      "staff": {
+        "actor_1": "Choi Woo-shik",
+        "actor_2": "Cho Yeo-jeong",
+        "actor_3": "Park Seo-joon"
+      },
+      "nominations": {
+        "nomination_1": "Premio Grand Bell al Mejor Actor Revelación",
+        "nomination_2": "park seo-joon baeksang arts award for most popular actor",
+        "nomination_3": "Mejor Actor Nuevo"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Everything everywhere all at once",
+      "year": 2022,
+      "duration": "2h 20min",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1e/Everything_Everywhere_All_at_Once.jpg",
+      "trailer": "https://www.youtube.com/embed/UiN9e-y2P7g",
+      "director": "Dan Kwan",
+      "genres": [
+        "comedy",
+        "action",
+        "adventure",
+        "fantasy"
+      ],
+      "synopsis": "Una heroína inesperada debe usar sus nuevos poderes para luchar contra los desconcertantes peligros del multiverso y así lograr salvar su mundo.",
+      "schedule": [
+        {
+          "id": 1,
+          "day": "2023-05-13",
+          "hour": [
+            "17:30",
+            "18:00"
+          ],
+          "cineclub": "Autocine Lima Park"
+        },
+        {
+          "id": 2,
+          "day": "2023-05-14",
+          "hour": [
+            "18:30",
+            "20:00"
+          ],
+          "cineclub": "Autocinema Tondero"
+        }
+      ],
+      "cinemas": {
+        "cinema_1": "Autocine",
+        "cinema_2": "Cinecafe",
+        "cinema_3": "Auditoria"
+      },
+      "staff": {
+        "actor_1": "Michelle Yeoh",
+        "actor_2": "Ke Huy Quan",
+        "actor_3": "Jamie Lee Curtis"
+      },
+      "nominations": {
+        "nomination_1": "Oscar a la mejor actriz de reparto",
+        "nomination_2": "BAFTA a la mejor actriz",
+        "nomination_3": "MTV Movie Award al Mejor Beso"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Green Book",
+      "year": 2018,
+      "duration": "2h 10min",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYzIzYmJlYTYtNGNiYy00N2EwLTk4ZjItMGYyZTJiOTVkM2RlXkEyXkFqcGdeQXVyODY1NDk1NjE@._V1_.jpg",
+      "trailer": "https://www.youtube.com/embed/eQQp_tXjP2U",
+      "director": "Peter Farrelly",
+      "genres": [
+        "comedy",
+        "music",
+        "drama",
+        "road"
+      ],
+      "synopsis": "Un pianista negro contrata a un rudo italoamericano para que sea su chofer y guardaespaldas durante una gira por el sur de los Estados Unidos en 1962, un viaje que les adentra en un territorio y una época subyugados al racismo.",
+      "schedule": [
+        {
+          "id": 1,
+          "day": "2023-05-13",
+          "hour": [
+            "17:30",
+            "18:00"
+          ],
+          "cineclub": "Autocine Lima Park"
+        },
+        {
+          "id": 2,
+          "day": "2023-05-14",
+          "hour": [
+            "18:30",
+            "20:00"
+          ],
+          "cineclub": "Autocinema Tondero"
+        }
+      ],
+      "cinemas": {
+        "cinema_1": "Autocine",
+        "cinema_2": "Cinecafe",
+        "cinema_3": "Auditoria"
+      },
+      "staff": {
+        "actor_1": "Viggo Mortensen",
+        "actor_2": "Mahershala Ali",
+        "actor_3": "Nick Vallelonga"
+      },
+      "nominations": {
+        "nomination_1": "Oscar a la mejor película",
+        "nomination_2": "Globo de Oro al mejor guión",
+        "nomination_3": "Mejor Guión Original"
+      }
+    },
+    {
+      "id": 4,
+      "title": "La lista de Schindler",
+      "year": 1993,
+      "duration": "3h 15min",
+      "poster": "https://es.web.img3.acsta.net/pictures/19/02/12/18/49/4078948.jpg",
+      "trailer": "https://www.youtube.com/embed/gG22XNhtnoY",
+      "director": "Steven Spielberg",
+      "genres": [
+        "history",
+        "war",
+        "black-and-white",
+        "drama"
+      ],
+      "synopsis": "El empresario alemán Oskar Schindler, miembro del Partido Nazi, pone en marcha un elaborado, costoso y arriesgado plan para salvar a más de mil judíos del Holocausto.",
+      "schedule": [
+        {
+          "id": 1,
+          "day": "2023-05-13",
+          "hour": [
+            "17:30",
+            "18:00"
+          ],
+          "cineclub": "Autocine Lima Park"
+        },
+        {
+          "id": 2,
+          "day": "2023-05-14",
+          "hour": [
+            "18:30",
+            "20:00"
+          ],
+          "cineclub": "Autocinema Tondero"
+        }
+      ],
+      "cinemas": {
+        "cinema_1": "Autocine",
+        "cinema_2": "Cinecafe",
+        "cinema_3": "Auditoria"
+      },
+      "staff": {
+        "actor_1": "Liam Neeson",
+        "actor_2": "Ralph Fiennes",
+        "actor_3": "Ben Kingsley"
+      },
+      "nominations": {
+        "nomination_1": "Oscar al mejor actor",
+        "nomination_2": "Oscar a la mejor banda sonora",
+        "nomination_3": "Oscar a la mejor fotografía"
+      }
+    },
+    {
+      "id": 5,
+      "title": "El increible Castillo vagabundo",
+      "year": 2004,
+      "duration": "1h 59min",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmQOGjtEOgav9aTVW5TiIf2KOIdwifLfHfQXAvdm1LFOmENKgZ",
+      "trailer": "https://www.youtube.com/embed/TioZt2aBZVE",
+      "director": "Hayao Miyazaki",
+      "genres": [
+        "anime",
+        "romance",
+        "action",
+        "fantasy",
+        "adventure",
+        "animation"
+      ],
+      "synopsis": "Después de que una bruja (Lauren Bacall) la transforma en una anciana, una fabricante (Jean Simmons) de sombreros busca refugio en la casa ambulante de un singular mago.",
+      "schedule": [
+        {
+          "id": 1,
+          "day": "2023-05-13",
+          "hour": [
+            "17:30",
+            "18:00"
+          ],
+          "cineclub": "Autocine Lima Park"
+        },
+        {
+          "id": 2,
+          "day": "2023-05-14",
+          "hour": [
+            "18:30",
+            "20:00"
+          ],
+          "cineclub": "Autocinema Tondero"
+        }
+      ],
+      "cinemas": {
+        "cinema_1": "Autocine",
+        "cinema_2": "Cinecafe",
+        "cinema_3": "Auditoria"
+      },
+      "staff": {
+        "actor_1": "Christian Bale",
+        "actor_2": "Takuya Kimura",
+        "actor_3": "Emily Mortimer"
+      },
+      "nominations": {
+        "nomination_1": "Óscar a la mejor película de animación",
+        "nomination_2": "Copa Volpi al Mejor Actor",
+        "nomination_3": "Satellite a la mejor película o corto animado"
+      }
+    }
+  ],
+  "popular-now": [
+    {
+      "id": 1,
+      "date": "SAB,ABRIL 15 | 15:30 PM",
+      "img": "https://i.postimg.cc/kMt6mj02/autocinema.png",
+      "location": "San Miguel 15088",
+      "about": "Discusión y análisis de las películas nominadas al Oscar."
+    },
+    {
+      "id": 2,
+      "date": "SAB,ABRIL 15 | 15:30 PM",
+      "img": "https://i.postimg.cc/kMt6mj02/autocinema.png",
+      "location": "San Miguel 15088",
+      "about": "Discusión y análisis de las películas nominadas al Oscar."
+    },
+    {
+      "id": 3,
+      "date": "SAB,ABRIL 15 | 15:30 PM",
+      "img": "https://i.postimg.cc/kMt6mj02/autocinema.png",
+      "location": "San Miguel 15088",
+      "about": "Discusión y análisis de las películas nominadas al Oscar."
+    },
+    {
+      "id": 4,
+      "date": "SAB,ABRIL 15 | 15:30 PM",
+      "img": "https://i.postimg.cc/kMt6mj02/autocinema.png",
+      "location": "San Miguel 15088",
+      "about": "Discusión y análisis de las películas nominadas al Oscar."
+    }
+  ],
+  "popular-post": [
+    {
+      "id": 1,
+      "theme": "Los ganadores de los Premios Oscar 2023",
+      "background": "https://i.postimg.cc/L6M5SRt7/post-card.png",
+      "group": "OscarDiscusion",
+      "icon-group": "https://i.postimg.cc/WbFfVRfH/Mask-group-2.png"
+    },
+    {
+      "id": 2,
+      "theme": "Los Oscar 2023",
+      "background": "https://mallorcalma.com/wp-content/uploads/2020/12/title.cineciutat.mallorca.kino_.cinema.alternative-e1610200568216.jpg",
+      "group": "OscarDiscusion",
+      "icon-group": "https://www.nicepng.com/png/detail/131-1318812_avatar-group-icon.png"
+    },
+    {
+      "id": 3,
+      "theme": "Los ganadores de los Premios Oscar 2023",
+      "background": "https://i.postimg.cc/L6M5SRt7/post-card.png",
+      "group": "OscarDiscusion",
+      "icon-group": "https://i.postimg.cc/WbFfVRfH/Mask-group-2.png"
+    }
+  ],
+  "cineclubs": [
+    {
+      "id": 1,
+      "title": "Autocine Lima Park",
+      "banner": "https://i.postimg.cc/25DXG8PC/cineclub-banner.png",
+      "subtitle": "Disfrutar de los últimos estrenos y también de nuestra confitería desde la comodidad de tu auto. ¡El lugar perfecto para salir de la rutina! Te esperamos.",
+      "description": "Somos una propuesta de entretenimiento donde vivirás el cine desde la comodidad y seguridad de tu auto. Podrás disfrutar de los últimos estrenos y también de nuestra confitería. ¡El lugar perfecto para salir de la rutina! Te esperamos.",
+      "address": "Calle Alfredo Mendiola 3698 Km 8.5 de la Av. Panamericana Norte Independencia",
+      "attention": "Lunes a Viernes: primera función del día Sábados, Domingo y festivos: primera función del día",
+      "points": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5K22BOYeOiDTybrtlbI8CDnBEOa-jIWOWfOk8IT6detyvX9tqGjXJYdA6wHHT69BT3DI&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "title": "Autocinema Tondero",
+      "banner": "https://i.postimg.cc/25DXG8PC/cineclub-banner.png",
+      "subtitle": "Descubre todos los eventos que tu ciudad tiene para ti! Conciertos, festivales, fiestas, conferencias y más. ",
+      "description": "Somos una propuesta de entretenimiento donde vivirás el cine desde la comodidad y seguridad de tu auto. Podrás disfrutar de los últimos estrenos y también de nuestra confitería. ¡El lugar perfecto para salir de la rutina! Te esperamos.",
+      "address": "Calle Alfredo Mendiola 3698 Km 8.5 de la Av. Panamericana Norte Independencia",
+      "attention": "Lunes a Viernes: primera función del día Sábados, Domingo y festivos: primera función del día",
+      "points": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWaIAEyFwd3I5wRa3Hrx87yZlIrYacWKP3lg&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "title": "Autocine Arnolds",
+      "subtitle": "Disfrutar de los últimos estrenos junto a tus amigos asi generas recuerdos para toda la vida ",
+      "points": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfeYKRmMC1nePTCULvj-abC__QVYxwEyFPTA&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "title": "La Tostadora - Café y Arte Libre",
+      "subtitle": "Las mejores peliculas en un solo lugar, vive una experiencia inolvidable disfrutando el atardecer ",
+      "points": 4,
+      "image": "https://www.enlima.pe/sites/default/files/cineclub-lima-tostadora-cafe-04.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Cineclub Casa Bagre",
+      "subtitle": "Quieres pasarla bien, conocer nuevas personas y disfrutar de tus peliculas favoritas, visitanos, no te vas arrepentir",
+      "points": 4,
+      "image": "https://www.enlima.pe/sites/default/files/cineclub-lima-casa-bagre.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Sala Armando Robles Godoy",
+      "subtitle": "Nada mejor que ver tus peliculas favoritas, y compartir con personas con gustos afines",
+      "points": 4,
+      "image": "https://www.enlima.pe/sites/default/files/cineclub-lima-sala-armando-robles-godoy.jpg"
+    },
+    {
+      "id": 7,
+      "title": "ElCine PUCP",
+      "subtitle": "Disfrutar de los últimos estrenos y también de nuestras bebidas desde la comodidad de tu auto.",
+      "points": 4,
+      "image": "https://www.enlima.pe/sites/default/files/cineclub-lima-cine-pucp-lima-sala-azul.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Autocinema Tondero2",
+      "subtitle": "Descubre todos los eventos que tu ciudad tiene para ti! comparte con amigos y familiares ",
+      "points": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKNzobEC6ojcMBXk4CIEXA3QnzKL1LTsHhiA&usqp=CAU"
+    },
+    {
+      "id": 9,
+      "title": "Valverde Cineclub",
+      "subtitle": "Disfrutar de los últimos estrenos ",
+      "points": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPNg3LN34l6eoKejRuPatd5KrEa9KA5oB_sg&usqp=CAU"
+    },
+    {
+      "id": 10,
+      "title": "Cineclub Mexico ",
+      "subtitle": "Disfrutar de los últimos estrenos ",
+      "points": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_CK8N-GdJmUuUgf-mrv53H7hVBdCBHiZ_5g&usqp=CAU"
+    },
+    {
+      "id": 11,
+      "title": "Autocine Arnolds",
+      "subtitle": "Quieres hacer amigos, ver tus peliculas favoritas, estas en el lugar correcto, ven y disfruta.",
+      "points": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbGx8sNb6R6Rp1o65PvHGVVjQh8vuXaua0jg&usqp=CAU"
+    },
+    {
+      "id": 12,
+      "title": "Cineclub Moreila",
+      "subtitle": "El mejor cine cerca de ti, con un estilo mexicano y un buen café. La combinación perfecta para pasar momentos agradables",
+      "points": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwRqK6E5zbp4rMI9TfqTPpYveSgbs4kyKhDw&usqp=CAU"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Backyardigans",
+      "topics": [
+        "anime",
+        "drama"
+      ],
+      "ubication": "Lima Miraflores",
+      "description": "Somos un grupo así bien insano"
+    },
+    {
+      "id": 2,
+      "name": "axe",
+      "topics": [
+        "Anime",
+        "Action",
+        "Adventure"
+      ],
+      "ubication": "San Juan",
+      "description": "Grupo relacionado a la acción"
+    }
+  ],
+  "cinephile": [
+    {
+      "id": 1,
+      "firstName": "Tania Sadith",
+      "lastName": "Vasquez Sal y Rosas",
+      "genre": "femenino",
+      "birthdate": "1999-02-27",
+      "phoneNumber": "964184051",
+      "idDocument": "C1",
+      "documentNumber": "72920060",
+      "email": "tanisadith08@gmail.com",
+      "password": "Bangtan08",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2LIckcA_iRCFWkS7hj22cFnhiWoud9D9DvA&usqp=CAU"
+
+
+    },
+    {
+      "firstName": "yasmin",
+      "lastName": "vasquez",
+      "genre": {
+        "id": "F",
+        "label": "femenino"
+      },
+      "documentNumber": "72920054",
+      "birthdate": "2023-05-01T05:00:00.000Z",
+      "phoneNumber": "964184051",
+      "email": "tani@gmail.com",
+      "confirmEmail": "tani@gmail.com",
+      "password": "hi",
+      "confirmPassword": "hi",
+      "id": 2
+    },
+    {
+      "firstName": "Yosef",
+      "lastName": "Vasquez",
+      "genre": {
+        "id": "M",
+        "label": "Masculino"
+      },
+      "documentNumber": "72940060",
+      "birthdate": "2005-08-04T05:00:00.000Z",
+      "phoneNumber": "999611024",
+      "email": "yosef@gmail.com",
+      "confirmEmail": "yosef@gmail.com",
+      "password": "asas",
+      "confirmPassword": "asas",
+      "id": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2LIckcA_iRCFWkS7hj22cFnhiWoud9D9DvA&usqp=CAU"
+    }
+  ]
+}

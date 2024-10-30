@@ -1,0 +1,9 @@
+<div class="bar-container">
+  <button (click)="searchCineClubs()" mat-icon-button>
+    <mat-icon>search</mat-icon>
+  </button>
+  <input matInput type="text"
+   placeholder="Buscar cineclubs..."
+   (keyup.enter)="searchCineClubs()"
+   #searchCineclubInput>
+</div>

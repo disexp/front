@@ -1,0 +1,162 @@
+<ng-container [ngSwitch]="stepperOrientation | async">
+  <div *ngSwitchCase="'horizontal'"></div>
+  <div *ngSwitchCase="'vertical'"></div>
+</ng-container>
+
+<div  class="mr-8 ml-8 mt-5 justify-content-center ">
+  <mat-stepper class = "new-group" [orientation]="(stepperOrientation | async)!">
+
+    <mat-step [stepControl]="firstFormGroup" label="Establece tu ubicación">
+
+      <form [formGroup]="firstFormGroup" class="flex flex-column pt-4">
+
+        <div class="flex flex-row flex-wrap justify-content-between" >
+          <div class="flex flex-column ">            
+              <h1 class="font-bold pb-4">En primer lugar, establece la ubicación de tu grupo</h1>
+              <mat-form-field  appearance="outline">
+                  <mat-label>Buscar una ciudad</mat-label>
+                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required >
+              </mat-form-field>      
+          </div> 
+          <div class =" align-self-center flex flex-column justify-content-start bg-white bg-auto pr-3 pl-3 border-round-lg max-w-30rem">             
+              <div class="flex flex-row tip-title pt-2">
+                <mat-icon>bolt</mat-icon>
+                <h2>Tip</h2>                 
+              </div>
+              <p>Los grupos se reúnen localmente, sea ya sea de forma presencial o en línea. La ubicación nos ayuda a conectar con personas de tu zona.</p>                
+          </div>
+        </div>          
+      
+        <div class="pt-4">
+          <button class ="next-button pr-6 pl-6"mat-button matStepperNext>Siguiente</button>
+        </div>
+
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="secondFormGroup" label="Elige tus temas">
+
+      <form [formGroup]="secondFormGroup" class="flex flex-column pt-4">
+
+        <div class="flex flex-row flex-wrap justify-content-between">
+          <div class="flex flex-column ">
+            <h1 class="font-bold pb-4">Elige los temas de tu grupo</h1>
+            <mat-form-field class="example-chip-list" appearance="fill">
+              <mat-label>Temas Favoritos</mat-label>
+              <mat-chip-grid #chipGrid aria-label="Enter topics"  formControlName="secondCtrl">
+              <mat-chip-row *ngFor="let topic of topics"
+                              (removed)="remove(topic)"
+                              [editable]="true"
+                              (edited)="edit(topic, $event)"
+                              [aria-description]="'press enter to edit ' + topic.name"
+                              >
+                  {{topic.name}}
+                  <button matChipRemove [attr.aria-label]="'remove ' + topic.name">
+                  <mat-icon>cancel</mat-icon>
+                  </button>
+              </mat-chip-row>
+              <input placeholder="Nuevo tema..."
+                      [matChipInputFor]="chipGrid"
+                      [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                      [matChipInputAddOnBlur]="addOnBlur"
+                      (matChipInputTokenEnd)="add($event)"
+                      />
+              </mat-chip-grid>
+            </mat-form-field>
+          </div>
+          <div class =" align-self-center flex flex-column justify-content-start bg-white bg-auto pr-3 pl-3 border-round-lg max-w-30rem">             
+            <div class="flex flex-row tip-title pt-2">
+              <mat-icon>bolt</mat-icon>
+              <h2>Tip</h2>                 
+            </div>
+            <p>¡Se concreto! Esto nos ayudará a promocionar tu grupo entre las personas adecuadas. Trata de seleccionar al menos 3 temas antes de ir al siguiente paso.</p>                
+        </div>
+        </div>
+
+        <div class="pt-4">
+          <button class ="back-button pr-7 pl-7 mr-3" mat-button matStepperPrevious>Volver</button>
+          <button class ="next-button pr-6 pl-6" mat-button matStepperNext>Siguiente</button>
+        </div>
+
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="thirdFormGroup" label="Nombre de tu grupo">
+      <form [formGroup]="thirdFormGroup" class="flex flex-column pt-4">
+        <div class="flex flex-row flex-wrap justify-content-between">
+          <div class="flex flex-column ">
+            <h1 class="font-bold ">Indica un nombre para el grupo</h1>
+            <p class="instruction pb-4">Elige un nombre que ayude a las personas a saber de qué trata el grupo.</p>
+            <mat-form-field appearance="outline">
+              <mat-label>Nombre de tu grupo</mat-label>
+              <input matInput formControlName="thirdCtrl" placeholder="Ej. WeCare" required>
+            </mat-form-field>
+          </div>
+          <div class =" align-self-center flex flex-column justify-content-start bg-white bg-auto pr-3 pl-3 border-round-lg max-w-30rem">             
+            <div class="flex flex-row tip-title pt-2">
+              <mat-icon>bolt</mat-icon>
+              <h2>Tip</h2>                 
+            </div>
+            <p>Si cambias de idea, puedes editar esto más tarde.</p>
+          </div>
+        </div>
+      
+        <div class="pt-4">
+          <button class ="back-button pr-7 pl-7 mr-3" mat-button matStepperPrevious>Volver</button>
+          <button class ="next-button pr-6 pl-6" mat-button matStepperNext>Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="fourthFormGroup" label="Describe tu grupo">
+        <form [formGroup]="fourthFormGroup" class="flex flex-column pt-4">
+          <div class="flex flex-row flex-wrap justify-content-between">
+
+            <div class="flex flex-column ">
+              <h1 class="font-bold ">Describe tu grupo</h1>
+              <p class="instruction pb-4 max-w-30rem">Esto será lo que verá cualquier persona cuando promocionemos tu 
+                grupo, pero también podrás actualizarlo más tarde. Nos importa la 
+                conexión humana, por eso alguien revisará tu grupo para garantizar 
+                que cumple nuestras directrices de la comunidad.</p>
+              <mat-form-field class="example-full-width">
+                <mat-label>Escribe al menos 50 caractéres</mat-label>
+                <textarea formControlName="fourthCtrl" matInput placeholder="Ej. Únete a nuestra comunidad..." ></textarea>
+              </mat-form-field>
+            </div>
+
+            <div class =" align-self-center flex flex-column justify-content-start bg-white bg-auto pr-3 pl-3 border-round-lg max-w-30rem">             
+              <div class="flex flex-row tip-title pt-2">
+                <mat-icon>bolt</mat-icon>
+                <h2>Tip</h2>
+              </div>
+                <p>Cuestiones que debes plantearte: </p>
+                <ul>
+                    <li>¿Cuál es el objetivo del grupo?</li>
+                    <li>¿Con quién te gustaría encontrarte?</li>
+                    <li>¿Qué se hará en tus eventos?</li>
+                </ul>           
+            </div>
+          </div>
+
+          <div>
+            <button class ="back-button pr-7 pl-7 mr-3" mat-button matStepperPrevious>Volver</button>
+            <button class ="next-button pr-6 pl-6" mat-button matStepperNext>Siguiente</button>
+          </div>
+        </form>
+      </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Finalizado</ng-template>
+
+      <div class="title pt-4 pb-4">
+        <h1 class="font-bold">Haz completado la creación de tu grupo</h1>
+        <p>Felicidades!!!</p>
+      </div>
+      <div>
+        <button class ="back-button pr-7 pl-7 mr-3" mat-button matStepperPrevious>Volver</button>
+        <button class ="next-button pr-6 pl-6" (click)="submit()" mat-button>Guardar</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+
+</div>
+

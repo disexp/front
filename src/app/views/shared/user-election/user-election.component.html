@@ -1,0 +1,44 @@
+<div class="container">
+
+  <button mat-icon-button class="back-button" (click)="redirectToLandingPage()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+
+  <div class="background-image"></div>
+  <!-- Resto del contenido -->
+  <h1 class="title">Vive el cine a tu manera</h1>
+
+  <div class="cards">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image-cinephil"></div>
+        <mat-card-title>Cinéfilo</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="https://st4.depositphotos.com/4278641/38546/i/450/depositphotos_385464676-stock-photo-young-man-bucket-popcorn-eyeglasses.jpg" alt="Photo of a Cinephil">
+      <mat-card-content class="mat-card-content">
+        <p>Descubre el fascinante mundo del cine alternativo: Reserva películas, compra entradas, crea grupos y encuentra los cines más cercanos. ¡Prepárate para vivir momentos inolvidables en la pantalla grande con nosotros!
+        </p>
+      </mat-card-content>
+      <mat-card-actions class="mat-card-actions">
+        <button class="register-button" mat-raised-button (click)="redirectToRegisterCinephile()">Registrarse</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image-owner"></div>
+        <mat-card-title>Propieatorio de Cineclub</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="https://misc.pagesuite.com/3630c326-c935-42f5-b0da-daebc36b7646/images/IMG_LA-3047585_la-fi-ct-_2_1_0A3NNOCD.jpg" alt="Photo of a Owner Club">
+      <mat-card-content class="mat-card-content">
+        <p>Descubre el fascinante mundo del cine alternativo: Reserva películas, compra entradas, crea grupos y encuentra los cines más cercanos. ¡Prepárate para vivir momentos inolvidables en la pantalla grande con nosotros!
+        </p>
+      </mat-card-content>
+      <mat-card-actions  class="mat-card-actions">
+        <button class="register-button" mat-raised-button (click)="redirectToRegisterOwner()">Registrarse</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+
+</div>

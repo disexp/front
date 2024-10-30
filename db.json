@@ -1,0 +1,106 @@
+{
+  "cineclubs": [
+      {
+          "id": 1,
+          "title": "Autocine Lima Park",
+          "banner": "https://i.postimg.cc/25DXG8PC/cineclub-banner.png",
+          "subtitle": "Disfrutar de los últimos estrenos y también de nuestra confitería desde la comodidad de tu auto. ¡El lugar perfecto para salir de la rutina! Te esperamos.",
+          "description":"Somos una propuesta de entretenimiento donde vivirás el cine desde la comodidad y seguridad de tu auto. Podrás disfrutar de los últimos estrenos y también de nuestra confitería. ¡El lugar perfecto para salir de la rutina! Te esperamos.",
+          "address": "Calle Alfredo Mendiola 3698 Km 8.5 de la Av. Panamericana Norte Independencia",
+          "attention": "Lunes a Viernes: primera función del día Sábados, Domingo y festivos: primera función del día",
+          "points": 4,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5K22BOYeOiDTybrtlbI8CDnBEOa-jIWOWfOk8IT6detyvX9tqGjXJYdA6wHHT69BT3DI&usqp=CAU"
+
+      },
+      {
+          "id": 2,
+          "title": "Autocinema Tondero",
+          "banner": "https://i.postimg.cc/25DXG8PC/cineclub-banner.png",
+          "subtitle": "Descubre todos los eventos que tu ciudad tiene para ti! Conciertos, festivales, fiestas, conferencias y más. ",
+          "description":"Somos una propuesta de entretenimiento donde vivirás el cine desde la comodidad y seguridad de tu auto. Podrás disfrutar de los últimos estrenos y también de nuestra confitería. ¡El lugar perfecto para salir de la rutina! Te esperamos.",
+          "address": "Calle Alfredo Mendiola 3698 Km 8.5 de la Av. Panamericana Norte Independencia",
+          "attention": "Lunes a Viernes: primera función del día Sábados, Domingo y festivos: primera función del día",
+          "points": 3,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWaIAEyFwd3I5wRa3Hrx87yZlIrYacWKP3lg&usqp=CAU"
+      },
+      {
+          "id": 3,
+          "title": "Autocine Arnolds",
+          "subtitle": "Disfrutar de los últimos estrenos ",
+          "points": 4,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfeYKRmMC1nePTCULvj-abC__QVYxwEyFPTA&usqp=CAU"
+
+      },
+      {
+          "id": 4,
+          "title": "La Tostadora – Café y Arte Libre",
+          "subtitle": "Disfrutar de los últimos estrenos ",
+          "points": 4,
+          "image":"https://www.enlima.pe/sites/default/files/cineclub-lima-tostadora-cafe-04.jpg"
+
+      },
+      {
+          "id": 5,
+          "title": "Cineclub Casa Bagre",
+          "subtitle": "Disfrutar de los últimos estrenos ",
+          "points": 4,
+          "image":"https://www.enlima.pe/sites/default/files/cineclub-lima-casa-bagre.jpg"
+
+      },
+      {
+          "id": 6,
+          "title": "Sala Armando Robles Godoy",
+          "subtitle": "Disfrutar de los últimos estrenos ",
+          "points": 4,
+          "image":"https://www.enlima.pe/sites/default/files/cineclub-lima-sala-armando-robles-godoy.jpg"
+
+      },
+      {
+          "id": 7,
+          "title": "ElCine PUCP",
+          "subtitle": "Disfrutar de los últimos estrenos y también de nuestra confitería desde la comodidad de tu auto. ¡El lugar perfecto para salir de la rutina! Te esperamos.",
+          "points": 4,
+          "image":"https://www.enlima.pe/sites/default/files/cineclub-lima-cine-pucp-lima-sala-azul.jpg"
+
+      },
+      {
+          "id": 8,
+          "title": "Autocinema Tondero",
+          "subtitle": "Descubre todos los eventos que tu ciudad tiene para ti! Conciertos, festivales, fiestas, conferencias y más. ",
+          "points": 3,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKNzobEC6ojcMBXk4CIEXA3QnzKL1LTsHhiA&usqp=CAU"
+
+      },
+      {
+          "id": 9,
+          "title": "Valverde Cineclub",
+          "subtitle": "Disfrutar de los últimos estrenos ",
+          "points": 4,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPNg3LN34l6eoKejRuPatd5KrEa9KA5oB_sg&usqp=CAU"
+
+      },
+      {
+          "id": 10,
+          "title": "Cineclub Mexico ",
+          "subtitle": "Disfrutar de los últimos estrenos ",
+          "points": 4,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_CK8N-GdJmUuUgf-mrv53H7hVBdCBHiZ_5g&usqp=CAU"
+
+      },
+      {
+          "id": 11,
+          "title": "Autocine Arnolds",
+          "subtitle": "Disfrutar de los últimos estrenos ",
+          "points": 4,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbGx8sNb6R6Rp1o65PvHGVVjQh8vuXaua0jg&usqp=CAU"
+
+      },
+      {
+          "id": 12,
+          "title": "Cineclub Moreila",
+          "subtitle": "Disfrutar de los últimos estrenos ",
+          "points": 4,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwRqK6E5zbp4rMI9TfqTPpYveSgbs4kyKhDw&usqp=CAU"
+      }
+  ]
+}
