@@ -2,14 +2,14 @@ import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Business } from 'src/app/core/models/cineclub.model';
-
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class CineclubService {
 
   public moviesList:Business[]=[]
-  private apiURL="http://localhost:3000/Business"
+  private apiURL=`${environment.serverBasePath}/businessTypes`
   constructor(private http: HttpClient) {
     this.getCineclubs()
    }

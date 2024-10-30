@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { TypeUser } from 'src/app/core/models/person.model';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TypeUserService {
 
-  private apiURL="http://localhost:3000/TypeUser";
+  private apiURL=`${environment.serverBasePath}/typeUsers`;
 
   public personsList:TypeUser[]=[];
   constructor(private http: HttpClient) {

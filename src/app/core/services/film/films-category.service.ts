@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FilmCategory } from '../../models/film.model';
 import { Observable } from 'rxjs';
-
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +10,7 @@ export class FilmsCategoryService {
 
   public FilmCategoryList: FilmCategory[] = [];
 
-  private apiURL = "http://localhost:3000/FilmCategory";
+  private apiURL = `${environment.serverBasePath}/filmCategories`;
 
   constructor(private http: HttpClient) {
     this.getFilmCategory().subscribe((filmCategories) => {

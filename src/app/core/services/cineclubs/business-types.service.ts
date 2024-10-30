@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BusinessType } from '../../models/cineclub.model';
 import { Observable } from 'rxjs';
-
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class BusinessTypesService {
-  private apiURL="http://localhost:3000/BusinessType";
+  private apiURL=`${environment.serverBasePath}/businessTypes`;
 
   public businessTypesList:BusinessType[]=[];
 

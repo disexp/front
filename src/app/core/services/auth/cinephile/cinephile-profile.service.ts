@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of, switchMap } from 'rxjs';
 import { Person } from 'src/app/core/models/user-profile.model';
-
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
@@ -12,37 +12,37 @@ export class CinephileProfileService {
 
   //General
   addPerson(data: Person): Observable<any>{
-    return this._http.post('http://localhost:3000/person',data);
+    return this._http.post(`${environment.serverBasePath}/person`,data);
   }
 
   getPersonList(): Observable<any>{
-    return this._http.get('http://localhost:3000/person');
+    return this._http.get(`${environment.serverBasePath}/person`);
   }
 
   getUserGender(): Observable<any>{
-    return this._http.get('http://localhost:3000/gender');
+    return this._http.get(`${environment.serverBasePath}/genders`);
   }
 
   //Customer
   addCustomer(data: any): Observable<any>{
-    return this._http.post('http://localhost:3000/customer',data);
+    return this._http.post(`${environment.serverBasePath}/customers`,data);
   }
 
   getCustomerList(): Observable<any>{
-    return this._http.get('http://localhost:3000/customer');
+    return this._http.get(`${environment.serverBasePath}/customers`);
   }
 
   //Owner
   getBusinessTypeList(): Observable<any>{
-    return this._http.get('http://localhost:3000/businessType');
+    return this._http.get(`${environment.serverBasePath}/businessTypes`);
   }
 
   addOwner(data: any): Observable<any>{
-    return this._http.post('http://localhost:3000/owner',data);
+    return this._http.post(`${environment.serverBasePath}/owners`,data);
   }
 
   addBusiness(data: any):Observable<any>{
-    return this._http.post('http://localhost:3000/business',data);
+    return this._http.post(`${environment.serverBasePath}/businesses`,data);
   }
 
   validateCredentials(email: string, password: string): Observable<any>{
