@@ -1,3 +1,4 @@
 export const environment = {
   production: true,
-  serverBasePath: undefined};
+  serverBasePath:  'http://sweet-courage-production.up.railway.app/api/TuCine/v1'
+};
