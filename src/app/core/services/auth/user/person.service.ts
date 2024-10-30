@@ -2,14 +2,14 @@ import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Person } from 'src/app/core/models/person.model';
-
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonService {
   public personsList:Person[]=[]
-  private apiURL="http://localhost:3000/person"
+  private apiURL=`${environment.serverBasePath}/person`;
   constructor(private http: HttpClient) {
     this.getPersons()
    }

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 // import { Movie } from 'src/app/core/models/film.model';
 import { Film } from '../../models/film.model';
 import { Observable } from 'rxjs';
-
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
@@ -13,9 +13,9 @@ export class FilmService {
 
   //private apiURL="http://localhost:3000/movies"
 
-  private apiURL="http://localhost:3000/Film";
+  private apiURL = `${environment.serverBasePath}/films`;
 
-  private apiBackend= "httphttp://localhost:3000/film";
+  private apiBackend = `${environment.serverBasePath}/films`;
 
   constructor(private http:HttpClient) {
     this.getFilms().subscribe((films)=>{

@@ -3,15 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs';
 import { Group } from 'src/app/core/models/group.model';
-
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
-})  
+})
 export class GroupService {
 
   public groupList:Group[]=[]
 
-  private apiURL="http://localhost:3000/Group"
+  private apiURL = `${environment.serverBasePath}/groups`;
   constructor(private http:HttpClient) {
     this.getGroups()
   }
